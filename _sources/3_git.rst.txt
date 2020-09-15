@@ -302,6 +302,10 @@ GitHub account, you might want to `add your Imperial email address to your
 GitHub account
 <https://docs.github.com/en/enterprise/2.15/user/articles/adding-an-email-address-to-your-github-account>`_.
 
+.. _github_classroom_exercise:
+
+Doing coursework using GitHub Classroom
+---------------------------------------
 
 
 
