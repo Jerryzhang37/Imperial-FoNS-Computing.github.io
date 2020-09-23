@@ -60,8 +60,8 @@
 <ul>
 <li><p><a class="reference internal" href="#windows" id="id10">Windows</a></p>
 <ul>
-<li><p><a class="reference internal" href="#software-hub" id="id11">Software Hub</a></p></li>
-<li><p><a class="reference internal" href="#direct-download" id="id12">Direct download</a></p></li>
+<li><p><a class="reference internal" href="#direct-download" id="id11">Direct download</a></p></li>
+<li><p><a class="reference internal" href="#software-hub" id="id12">Software Hub</a></p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#macos" id="id13">MacOS</a></p></li>
@@ -191,11 +191,20 @@ see below, this makes it really easy to obtain the exercise and work with it.</p
 <h2><a class="toc-backref" href="#id9"><span class="section-number">4.2. </span>Installing Git</a><a class="headerlink" href="#installing-git" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="windows">
 <h3><a class="toc-backref" href="#id10"><span class="section-number">4.2.1. </span>Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="software-hub">
-<h4><a class="toc-backref" href="#id11"><span class="section-number">4.2.1.1. </span>Software Hub</a><a class="headerlink" href="#software-hub" title="Permalink to this headline">¶</a></h4>
-</div>
 <div class="section" id="direct-download">
-<h4><a class="toc-backref" href="#id12"><span class="section-number">4.2.1.2. </span>Direct download</a><a class="headerlink" href="#direct-download" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id11"><span class="section-number">4.2.1.1. </span>Direct download</a><a class="headerlink" href="#direct-download" title="Permalink to this headline">¶</a></h4>
+<p>To install Git directly, navigate to <a class="reference external" href="https://git-scm.com/download/win">the Git Windows download website</a>. If the download doesn’t start
+immediately, click on <code class="xref py py-obj docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">download</span> <span class="pre">manually</span></code>. Run the installer.
+Unless you have specific reasons to do otherwise, it’s reasonable to accept all
+the defaults by clicking <a class="reference external" href="https://docs.python.org/3/library/functions.html#next" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a> each time.</p>
+<p>Now proceed to <a class="reference internal" href="#check-git"><span class="std std-ref">check the install</span></a>.</p>
+</div>
+<div class="section" id="software-hub">
+<h4><a class="toc-backref" href="#id12"><span class="section-number">4.2.1.2. </span>Software Hub</a><a class="headerlink" href="#software-hub" title="Permalink to this headline">¶</a></h4>
+<p>Follow the instructions on <a class="reference external" href="https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/software-hub/">the Imperial Software Hub website</a>.</p>
+<p>The version of Git on Software Hub is somewhat older and has compatibility
+issues with the most recent versions of <span class="xref std std-ref">Visual Studio Code</span>.</p>
+<p>Now proceed to <a class="reference internal" href="#check-git"><span class="std std-ref">check the install</span></a>.</p>
 </div>
 </div>
 <div class="section" id="macos">
@@ -235,12 +244,12 @@ correct install line <a class="reference external" href="https://git-scm.com/dow
 <div class="section" id="check-the-install">
 <span id="check-git"></span><h3><a class="toc-backref" href="#id15"><span class="section-number">4.2.4. </span>Check the install</a><a class="headerlink" href="#check-the-install" title="Permalink to this headline">¶</a></h3>
 <p>Check that you’ve got a successfully working Git by running this in the
-terminal:</p>
+<a class="reference internal" href="8_terminal.html#terminal"><span class="std std-ref">Opening a terminal</span></a>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version
 </pre></div>
 </div>
 <p>The expected output is something like:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git version <span class="m">2</span>.28.0
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git version 2.28.0</span>
 </pre></div>
 </div>
 <p>The exact version may be a little different. This is not important.</p>
