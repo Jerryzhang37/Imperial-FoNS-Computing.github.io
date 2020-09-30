@@ -15,7 +15,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="6. DIY Linux" href="DIYLinux.html" />
+    <link rel="next" title="6. Installing Linux" href="linux.html" />
     <link rel="prev" title="4. Git and GitHub Classroom" href="git.html" />
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
@@ -47,6 +47,34 @@
             
   <div class="section" id="ssh">
 <h1><span class="section-number">5. </span>SSH<a class="headerlink" href="#ssh" title="Permalink to this headline">¶</a></h1>
+<p>SSH, the Secure SHell is a program which enables you to connect to another
+computer to run commands in a <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>. Other programs can
+also run over the SSH connection, so SSH can also be used for tasks like copying files between
+computers or to enable <span class="xref std std-ref">Visual Studio Code</span> to open files located on a
+different computer.</p>
+<div class="section" id="installing-ssh-on-windows">
+<h2><span class="section-number">5.1. </span>Installing SSH on Windows<a class="headerlink" href="#installing-ssh-on-windows" title="Permalink to this headline">¶</a></h2>
+<p>Windows doesn’t come with SSH installed, but it does come with the Windows
+installation of Git. So if you have <a class="reference internal" href="git.html#git-windows"><span class="std std-ref">installed
+Git</span></a> then you will have ssh installed.</p>
+<p>Alternatively, you can install SSH by <a class="reference internal" href="terminal.html#terminal-windows"><span class="std std-ref">opening Powershell</span></a> and typing:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> Add-WindowsCapability -Online -Name OpenSSH.Client*
+</pre></div>
+</div>
+</div>
+<div class="section" id="ssh-on-mac">
+<h2><span class="section-number">5.2. </span>SSH on Mac<a class="headerlink" href="#ssh-on-mac" title="Permalink to this headline">¶</a></h2>
+<p>All recent versions of MacOS come with ssh installed.</p>
+</div>
+<div class="section" id="ssh-on-linux">
+<h2><span class="section-number">5.3. </span>SSH on Linux<a class="headerlink" href="#ssh-on-linux" title="Permalink to this headline">¶</a></h2>
+<p>SSH is usually installed on Linux machines by default. In the unlikely event
+that it’s not installed, it will be available using your distribution’s package
+manager. For example on Ubuntu and related distributions, you would type:</p>
+<div class="highlight-terminal notranslate"><div class="highlight"><pre><span></span>$ sudo apt install ssh-client
+</pre></div>
+</div>
+</div>
 </div>
 
 

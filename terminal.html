@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="8. Homebrew" href="homebrew.html" />
-    <link rel="prev" title="6. DIY Linux" href="DIYLinux.html" />
+    <link rel="prev" title="6. Installing Linux" href="linux.html" />
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
 <![endif]-->
@@ -47,26 +47,31 @@
             
   <div class="section" id="opening-a-terminal">
 <span id="terminal"></span><h1><span class="section-number">7. </span>Opening a terminal<a class="headerlink" href="#opening-a-terminal" title="Permalink to this headline">¶</a></h1>
-<p>A terminal is a text window which enables you to run programmes on your computer
+<p>A terminal is a text window which enables you to run programs on your computer
 by typing their name, often followed by various options, commands, or data file
 names. The terminal is often also called the command line. It may also be
 referred to by the specific name of the program which interprets the text
-commands, such as Bash or Zsh. Full instructions on how to use the terminal are
-beyond the scope of this document, but some of the installation and
+commands, such as Bash, Zsh or, for Windows, Powershell. The name for a program
+which interprets text commands like this is a “shell”, so you might also see the
+terminal referred to as the shell. Full instructions on how to use the terminal
+are beyond the scope of this document, but some of the installation and
 configuration steps described here need to be run in a terminal so its important
 that you at least know how to start one.</p>
 <p>If you need to know more about how to use a command line terminal then you
 should follow the <a class="reference external" href="https://swcarpentry.github.io/shell-novice/">Software Carpentry tutorial on the Unix Shell</a>.</p>
 <div class="section" id="windows">
-<h2><span class="section-number">7.1. </span>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
-<p>Terminal programmes are less frequently used under Windows than under MacOS or
-Linux. The main use of the terminal on Windows in these instructions is in
-conjunction with <span class="xref std std-ref">Git</span>, which installs its own Git Bash terminal. To run Git Bash
-(once you have installed Git), simply press the Windows key and click on Git
-Bash (which may be in a submenu).</p>
+<span id="terminal-windows"></span><h2><span class="section-number">7.1. </span>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<p>On Windows you can either run Windows’ own terminal, Powershell, or the Git Bash
+terminal that is installed when you <a class="reference internal" href="git.html#git-windows"><span class="std std-ref">install git</span></a>.</p>
+<p>To run Powershell, simply type <code class="xref py py-obj docutils literal notranslate"><span class="pre">powershell</span></code> into the search box at the bottom
+left of the screen.</p>
+<img alt="_images/powershell.png" src="_images/powershell.png" />
+<p>Similarly, if you have <a class="reference internal" href="git.html#git-windows"><span class="std std-ref">installed git</span></a> then you can run Git
+Bash by typing <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">bash</span></code> into the search box:</p>
+<img alt="_images/git-bash.png" src="_images/git-bash.png" />
 </div>
 <div class="section" id="macos">
-<h2><span class="section-number">7.2. </span>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
+<span id="terminal-mac"></span><h2><span class="section-number">7.2. </span>MacOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
 <p>The simplest way to open a terminal on MacOS is to press <code class="xref py py-obj docutils literal notranslate"><span class="pre">⌘</span> <span class="pre">+</span> <span class="pre">space</span></code> to open
 Spotlight Search and then type <code class="xref py py-obj docutils literal notranslate"><span class="pre">terminal</span></code> in the search window.</p>
 </div>
@@ -87,6 +92,13 @@ appear in the menu, or you can start typing <code class="xref py py-obj docutils
 appears.</p></li>
 </ol>
 </div></blockquote>
+</div>
+<div class="section" id="opening-a-terminal-within-visual-studio-code">
+<h2><span class="section-number">7.4. </span>Opening a terminal within Visual Studio Code<a class="headerlink" href="#opening-a-terminal-within-visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<p>If you have installed <a class="reference internal" href="vscode.html#visual-studio-code"><span class="std std-ref">Visual Studio Code</span></a> then you can launch a terminal
+from within the program by selecting <code class="xref py py-obj docutils literal notranslate"><span class="pre">new</span> <span class="pre">terminal</span></code> in the <code class="xref py py-obj docutils literal notranslate"><span class="pre">terminal</span></code> menu, or
+by pressing <code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span> <span class="pre">+</span> <span class="pre">~</span></code>. This will start a new terminal at the bottom of the
+Visual Studio Code Window.</p>
 </div>
 </div>
 
