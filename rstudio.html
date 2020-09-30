@@ -50,6 +50,10 @@
 <p>R is a high-level interpreted programming language used in many modules with a
 statistical component. RStudio is an integrated development environment (IDE)
 for R, providing editing, debugging and much more.</p>
+<p>Note that it is not necessary to have RStudio in order to use R,
+but <strong>RStudio is highly recommended</strong>.</p>
+<p>Also note that in most of the cases below (excluding the approach using
+Software Hub), R must be installed before trying to install RStudio.</p>
 <div class="section" id="installing-r-and-rstudio-on-windows">
 <h2><span class="section-number">2.1. </span>Installing R and RStudio on Windows<a class="headerlink" href="#installing-r-and-rstudio-on-windows" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="software-hub">
@@ -62,6 +66,19 @@ Software Hub webpage</a>.</p>
 </div>
 <div class="section" id="direct-install">
 <h3><span class="section-number">2.1.2. </span>Direct install<a class="headerlink" href="#direct-install" title="Permalink to this headline">¶</a></h3>
+<p>The current version of R can be obtained from the <a href="#id1"><span class="problematic" id="id2">`</span></a>Comprehensive R Archive</p>
+<p>Network Windows download page &lt;<a class="reference external" href="https://cran.rstudio.com/bin/windows/base/">https://cran.rstudio.com/bin/windows/base/</a>&gt;`__. The click
+on the latest release link (it will be called something like <code class="xref py py-obj docutils literal notranslate"><span class="pre">Download</span> <span class="pre">R</span> <span class="pre">4.0.2</span> <span class="pre">for</span> <span class="pre">Windows</span></code>, but
+the version may be newer than that). Run the installer and accept all of the
+default options.</p>
+<p>RStudio can be installed from the <a class="reference external" href="https://rstudio.com/products/rstudio/download/#download">RStudio install page</a>. Usually the big
+blue button will automatically detect the right version. Again, run the
+installer and accept the default options.</p>
+</div>
+<div class="section" id="running-rstudio">
+<h3><span class="section-number">2.1.3. </span>Running RStudio<a class="headerlink" href="#running-rstudio" title="Permalink to this headline">¶</a></h3>
+<p>Simply type <code class="xref py py-obj docutils literal notranslate"><span class="pre">rstudio</span></code> in the search box at the bottom left of your screen.</p>
+<img alt="_images/rstudio.png" src="_images/rstudio.png" />
 </div>
 </div>
 <div class="section" id="installing-r-and-rstudio-on-mac">
@@ -74,8 +91,8 @@ Software Hub webpage</a>.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id1">
-<h3><span class="section-number">2.2.2. </span>Direct install<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3><span class="section-number">2.2.2. </span>Direct install<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>The current version of R can be obtained from the <a class="reference external" href="https://cran.r-project.org/bin/macosx/">Comprehensive R Archive
 Network Mac download page</a>. The click
 on the latest release link (it will be called something like R-4.0.2.pkg, but
@@ -85,12 +102,36 @@ default options.</p>
 blue button will automatically detect the right version. Again, run the
 installer and accept the default options.</p>
 </div>
-<div class="section" id="running-rstudio">
-<h3><span class="section-number">2.2.3. </span>Running RStudio<a class="headerlink" href="#running-rstudio" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3><span class="section-number">2.2.3. </span>Running RStudio<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>You launch RStudio by pressing <code class="xref py py-obj docutils literal notranslate"><span class="pre">⌘</span> <span class="pre">+</span> <span class="pre">space</span></code> to open Spotlight search and
 type <code class="xref py py-obj docutils literal notranslate"><span class="pre">rstudio</span></code> in the resulting search box:</p>
 <img alt="_images/spotlight-rstudio.png" src="_images/spotlight-rstudio.png" />
 </div>
+</div>
+<div class="section" id="installing-r-and-rstudio-on-linux">
+<h2><span class="section-number">2.3. </span>Installing R and RStudio on Linux<a class="headerlink" href="#installing-r-and-rstudio-on-linux" title="Permalink to this headline">¶</a></h2>
+<p>It’s likely that your Linux distribution ships a suitable version of R. For
+example on Ubuntu you would run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install r-base
+</pre></div>
+</div>
+<p>On Fedora you would run:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf install R
+</pre></div>
+</div>
+<p>There are further details about installing R for various Linux distributions on
+the <a class="reference external" href="https://cran.r-project.org/bin/linux/">Comprehensive R Archive Network Linux folder</a>.</p>
+<p>You next need to download the RStudio package for your distribution from the <a class="reference external" href="https://rstudio.com/products/rstudio/download/#download">RStudio install page</a>. Once again, the
+install mechanism depends on the distribution. For Fedora and related packages,
+you may be able to simply double click on downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">rpm</span></code> file. This might
+also work with the downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code> file for Ubuntu, but you can also do it in
+the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a> by running the following command in the folder
+containing the downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install &lt;deb_file&gt;
+</pre></div>
+</div>
+<p>Obviously you replace <code class="xref py py-obj docutils literal notranslate"><span class="pre">&lt;deb_file&gt;</span></code> with the name of the <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code> file.</p>
 </div>
 </div>
 

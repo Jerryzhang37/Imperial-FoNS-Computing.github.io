@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Installing Linux &#8212; Installation instructions for FoNS 2020.0 documentation</title>
+    <title>7. Installing Linux &#8212; Installation instructions for FoNS 2020.0 documentation</title>
     <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="7. Opening a terminal" href="terminal.html" />
-    <link rel="prev" title="5. SSH" href="ssh.html" />
+    <link rel="next" title="8. Opening a terminal" href="terminal.html" />
+    <link rel="prev" title="6. LaTeX" href="latex.html" />
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
 <![endif]-->
@@ -46,15 +46,15 @@
           <div class="body" role="main">
             
   <div class="section" id="installing-linux">
-<h1><span class="section-number">6. </span>Installing Linux<a class="headerlink" href="#installing-linux" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">7. </span>Installing Linux<a class="headerlink" href="#installing-linux" title="Permalink to this headline">¶</a></h1>
 <p>We recommend Ubuntu as the go to Linux “flavour” for students and staff as there is some level of ICT support for it. Advanced users are free to use their own flavor such as Fedora, Mint, etc.</p>
 <div class="section" id="installing-ubuntu">
-<h2><span class="section-number">6.1. </span>Installing Ubuntu<a class="headerlink" href="#installing-ubuntu" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.1. </span>Installing Ubuntu<a class="headerlink" href="#installing-ubuntu" title="Permalink to this headline">¶</a></h2>
 <p>You may already have (or received) a bootable USB stick with Ubuntu 20.04 (64
 bit) installer on it. If you didn’t or would rather make your own (indeed, why
 not?!), <a class="reference external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0">its pretty easy</a>.</p>
 <div class="section" id="ubuntu-only-install">
-<h3><span class="section-number">6.1.1. </span>Ubuntu-only install<a class="headerlink" href="#ubuntu-only-install" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.1.1. </span>Ubuntu-only install<a class="headerlink" href="#ubuntu-only-install" title="Permalink to this headline">¶</a></h3>
 <p>Once you have your bootable USB, <a class="reference external" href="https://tutorials.ubuntu.com">follow this
 tutorial</a>. The best way to do this is
 to keep it handy on your smart phone or another computer and go through
@@ -77,7 +77,7 @@ are using one of the College-issued CMEE laptops, you should choose the
 “Erase disk and install Ubuntu” option.</p>
 </div>
 <div class="section" id="dual-boot-with-windows">
-<h3><span class="section-number">6.1.2. </span>Dual boot with Windows<a class="headerlink" href="#dual-boot-with-windows" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.1.2. </span>Dual boot with Windows<a class="headerlink" href="#dual-boot-with-windows" title="Permalink to this headline">¶</a></h3>
 <p>You can also set up your computer to dual boot Ubuntu and Windows.</p>
 <p>There are few (no?) benefits to choosing to dual-boot, and we do not
 recommended it. One reason may be that you are using your own laptop,
@@ -89,7 +89,7 @@ other operating system. Google “windows virtual machine on ubuntu”, and
 you will get plenty of step by step tutorials.</p>
 </div>
 <div class="section" id="dual-boot-with-mac-os">
-<h3><span class="section-number">6.1.3. </span>Dual boot with Mac OS<a class="headerlink" href="#dual-boot-with-mac-os" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.1.3. </span>Dual boot with Mac OS<a class="headerlink" href="#dual-boot-with-mac-os" title="Permalink to this headline">¶</a></h3>
 <p>Don’t be crazy!</p>
 <p>Both Linux and MacOS operating systems stem from Unix, an older OS which was fairly heavily copyrighted and licensed. MacOS is based on Darwin (a unix-like operating system), whilst Linux is another Unix-like OS.</p>
 <p>Practically this means that MacOS and Linux behave similarly and are both much easier to program with than Windows. That said, there are some benefits to Linux for a programmer over MacOS. Firstly you are basically trusted to break and fix most things yourself, whilst you CAN do similar things on Mac, they may be harder to achieve or done in different, more roundabout ways.</p>
@@ -97,7 +97,7 @@ you will get plenty of step by step tutorials.</p>
 <p>So the take-home message is, don’t bother wasting time with a MacOS - Linux dual boot, unless your life is <em>really</em> boring.</p>
 </div>
 <div class="section" id="creating-partitions-during-linux-installation">
-<h3><span class="section-number">6.1.4. </span>Creating partitions during Linux installation<a class="headerlink" href="#creating-partitions-during-linux-installation" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.1.4. </span>Creating partitions during Linux installation<a class="headerlink" href="#creating-partitions-during-linux-installation" title="Permalink to this headline">¶</a></h3>
 <p>When you install Ubuntu, you will have the opportunity to create separate
 <code class="docutils literal notranslate"><span class="pre">swap</span></code>, <code class="docutils literal notranslate"><span class="pre">root</span></code> and <code class="docutils literal notranslate"><span class="pre">home</span></code> partitions on your hard disk. <code class="docutils literal notranslate"><span class="pre">swap</span></code>
 necessarily needs to be a separate partition, while <code class="docutils literal notranslate"><span class="pre">root</span> <span class="pre">+</span> <span class="pre">home</span></code> can be on
@@ -110,7 +110,7 @@ reinstall it by just wiping the root partition, without losing any of your data
 </div>
 </div>
 <div class="section" id="tweaking-your-ubuntu-os">
-<h2><span class="section-number">6.2. </span>Tweaking your Ubuntu OS<a class="headerlink" href="#tweaking-your-ubuntu-os" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.2. </span>Tweaking your Ubuntu OS<a class="headerlink" href="#tweaking-your-ubuntu-os" title="Permalink to this headline">¶</a></h2>
 <p>Once you have installed Ubuntu, there are are many ways in which you can
 tweak your OS environment. For example, see
 <a class="reference external" href="http://www.howtogeek.com/tag/ubuntu/ubuntu-tips/">http://www.howtogeek.com/tag/ubuntu/ubuntu-tips/</a>.</p>
@@ -119,7 +119,7 @@ stability!</p>
 <p>Here are a couple of tweaks to our bash/terminal behavior that are
 recommended.</p>
 <div class="section" id="opening-nautilus-from-terminal">
-<h3><span class="section-number">6.2.1. </span>Opening Nautilus from terminal<a class="headerlink" href="#opening-nautilus-from-terminal" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.2.1. </span>Opening Nautilus from terminal<a class="headerlink" href="#opening-nautilus-from-terminal" title="Permalink to this headline">¶</a></h3>
 <p>In terminal you can simply enter “f” to open nautilus in current
 directory by doing the following. Firstly make a <code class="docutils literal notranslate"><span class="pre">.bash_aliases</span></code> file,
 then open it for editing:</p>
@@ -137,7 +137,7 @@ then open it for editing:</p>
 </div>
 </div>
 <div class="section" id="enabling-auto-complete-in-terminal">
-<h3><span class="section-number">6.2.2. </span>Enabling auto-complete in terminal<a class="headerlink" href="#enabling-auto-complete-in-terminal" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.2.2. </span>Enabling auto-complete in terminal<a class="headerlink" href="#enabling-auto-complete-in-terminal" title="Permalink to this headline">¶</a></h3>
 <p>What happens when you use up and down keys in terminal? If nothing, then
 you need to enable reverse searching history. To do so, open
 <code class="docutils literal notranslate"><span class="pre">/etc/inputrc</span></code> for editing:</p>
@@ -157,7 +157,7 @@ reverse-searching history (open a new terminal and try it!).</p>
 </div>
 </div>
 <div class="section" id="resources">
-<h2><span class="section-number">6.3. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.3. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://tutorials.ubuntu.com/">Ubuntu tutorials</a></p></li>
 <li><p><a class="reference external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0">Bootable USB
