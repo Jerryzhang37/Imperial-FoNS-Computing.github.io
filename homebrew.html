@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7. Homebrew &#8212; Installation instructions for FoNS 2020.0 documentation</title>
+    <title>8. Homebrew &#8212; Installation instructions for FoNS 2020.0 documentation</title>
     <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,7 +15,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="6. Opening a terminal" href="8_terminal.html" />
+    <link rel="prev" title="7. Opening a terminal" href="terminal.html" />
 <!--[if lte IE 6]>
 <link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
 <![endif]-->
@@ -45,17 +45,17 @@
           <div class="body" role="main">
             
   <div class="section" id="homebrew">
-<span id="id1"></span><h1><span class="section-number">7. </span>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><span class="section-number">8. </span>Homebrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://brew.sh">Homebrew</a> is a package manager, primarily for MacOS. What
 this means is that it provides a mechanism for easily installing a wide range of
 software packages. This avoids the need to click through a different set of
 installation options for each new package. Instead, most packages can be
 installed by typing a simple command such as:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew install git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">brew install git</span>
 </pre></div>
 </div>
 <p>or, for graphical packages:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew cask install visual-studio-code
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">brew cask install visual-studio-code</span>
 </pre></div>
 </div>
 <p>You don’t strictly need Homebrew in order to install the packages you need to do
@@ -63,9 +63,9 @@ your module: you can instead install each one using its graphical install
 process. However, you may find it easier to use Homebrew,
 particularly if your modules require several packages to be installed.</p>
 <div class="section" id="installing-homebrew">
-<h2><span class="section-number">7.1. </span>Installing homebrew<a class="headerlink" href="#installing-homebrew" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="8_terminal.html#terminal-mac"><span class="std std-ref">Open a terminal</span></a> and type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> /bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+<h2><span class="section-number">8.1. </span>Installing homebrew<a class="headerlink" href="#installing-homebrew" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="terminal">Open a terminal</a> and type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;</span>
 </pre></div>
 </div>
 <p>This will start the install process, and ask you for confirmation before
