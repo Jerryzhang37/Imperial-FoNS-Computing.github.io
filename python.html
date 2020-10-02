@@ -72,7 +72,7 @@ instructions there to download and run the installer.</p>
 <h2><span class="section-number">1.3. </span>Installing Python on Mac<a class="headerlink" href="#installing-python-on-mac" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="homebrew-install-anaconda">
 <h3><span class="section-number">1.3.1. </span>Homebrew install Anaconda<a class="headerlink" href="#homebrew-install-anaconda" title="Permalink to this headline">¶</a></h3>
-<p>If you’ve installed <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">Homebrew</span></a> then you can install Anaconda by
+<p>If you’ve installed <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">Homebrew for Mac</span></a> then you can install Anaconda by
 to <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">opening a terminal</span></a> and run the following command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew cask install anaconda
 </pre></div>
@@ -160,6 +160,206 @@ would type:</p>
 preferable to using <code class="xref py py-obj docutils literal notranslate"><span class="pre">sudo</span></code> and to install packages globally, as it removes any
 risk of interfering with packages that the operating system needs.</p>
 </div>
+</div>
+<div class="section" id="python-virtual-environments">
+<h2><span class="section-number">1.5. </span>Python Virtual Environments<a class="headerlink" href="#python-virtual-environments" title="Permalink to this headline">¶</a></h2>
+<p>Before we move on to actually installing packages, we need to give a
+little thought to where the packages are to be installed. We could
+simply install packages into the Python installation on our
+computer. This can be a reasonable approach if all you want to do is
+run code from the default versions of public packages. However, it has
+a number of limitations. Basically, a Python installation is a single
+namespace for packages, so if two different projects you are
+working on need two different versions of the same package, you’re out
+of luck. Similarly, if you are working on changes to a package, you
+probably don’t want your half-finished experimental work to be the
+package that your other projects use.</p>
+<p>Python virtual environments, or venvs, are separate namespaces within
+a Python installation. They have their own Python command and
+collection of packages. Effectively they behave like their own
+separate Python installation, except that most of the core Python
+files are shared, so a venv takes rather little additional space.</p>
+<div class="section" id="creating-a-venv">
+<span id="create-venv"></span><h3><span class="section-number">1.5.1. </span>Creating a venv<a class="headerlink" href="#creating-a-venv" title="Permalink to this headline">¶</a></h3>
+<p>The most straightforward way to create a venv is on the terminal
+command line, not from within Python itself. This is accomplished
+using Python’s <a class="reference external" href="https://docs.python.org/3/library/venv.html#module-venv" title="(in Python v3.8)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">venv</span></code></a> package. For example, to create a venv
+called <code class="xref py py-obj docutils literal notranslate"><span class="pre">my_venv</span></code>, you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m venv my_venv
+</pre></div>
+</div>
+<p>Don’t forget that the <code class="xref py py-obj docutils literal notranslate"><span class="pre">$</span></code> stands for the command prompt: you don’t
+type it. This command will create the folder <code class="xref py py-obj docutils literal notranslate"><span class="pre">my_venv</span></code> and various
+subfolders containing things like the Python program itself and space
+for any packages which you install in the venv. If there was already a
+file or folder called <code class="xref py py-obj docutils literal notranslate"><span class="pre">my_venv</span></code> in the current folder then you’ll get
+an error, so make sure you choose a new name.</p>
+<p>A venv doesn’t usually contain any particularly valuable data, so you
+should regard them as essentially disposable. In particular, if
+something goes wrong when creating a venv, just delete it and start
+again. In the bash or zsh shells you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> rm -rf my_venv
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span></code> will delete its argument and all its subdirectories
+without further prompts or warnings. There is no undo operation.
+Be very careful about what you delete.</p>
+</div>
+</div>
+<div class="section" id="using-a-venv">
+<span id="activate-venv"></span><h3><span class="section-number">1.5.2. </span>Using a venv<a class="headerlink" href="#using-a-venv" title="Permalink to this headline">¶</a></h3>
+<p>If you run Python from the terminal, then the simplest way to use the
+venv is to source its activate script. If using bash or zsh on Mac or
+Linux you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> my_venv/bin/activate
+</pre></div>
+</div>
+<p>while using bash on Windows you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> my_venv/Scripts/activate
+</pre></div>
+</div>
+<p>Obviously, you would use the folder name of your venv instead of
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">my_venv</span></code>. In either case, your command prompt will change to indicate
+that you are now using the venv. It might look something like:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$</span>
+</pre></div>
+</div>
+<p>Any subsequent invocations of Python commands such as <code class="xref py py-obj docutils literal notranslate"><span class="pre">python3</span></code> will
+now use the version from the venv, with access to whatever packages
+you have installed in that venv. If you are using a terminal shell
+other than bash or zsh, then see the <a class="reference external" href="https://docs.python.org/3/library/venv.html#module-venv" title="(in Python v3.8)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">venv</span></code></a> package documentation
+for the correct activation command.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Venv activation is just for one terminal session. You need to
+activate the venv every time you open a new terminal.  If you find
+that Python can’t find your packages or tests, then the first thing
+to check is whether you remembered to activate the venv.</p>
+</div>
+</div>
+<div class="section" id="installing-packages-in-a-venv">
+<h3><span class="section-number">1.5.3. </span>Installing packages in a venv<a class="headerlink" href="#installing-packages-in-a-venv" title="Permalink to this headline">¶</a></h3>
+<p>When the venv is active, the <code class="xref py py-obj docutils literal notranslate"><span class="pre">pip3</span></code> that your terminal will find is the one from
+the venv, and any packages you install will be installed in the venv, not in the
+system Python installation. For example if you needed Numpy and Matplotlib, you
+would type the following in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$</span> pip3 install numpy matplotlib
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="recommended-folder-layout-for-a-python-module">
+<h2><span class="section-number">1.6. </span>Recommended folder layout for a Python module<a class="headerlink" href="#recommended-folder-layout-for-a-python-module" title="Permalink to this headline">¶</a></h2>
+<p>In order to do the coursework for a typical module using Python, you’ll want to
+have a venv for the module, so that packages and software you use in different
+modules don’t interfere with each other, and you’ll usually want to have one
+folder for each assignment that is set in the module. If the module is using
+<a class="reference internal" href="git.html#github-classroom-exercise"><span class="std std-ref">GitHub Classroom</span></a> then each of these exercise folders
+will be a git repository.</p>
+<p>Suppose, then, that we are taking a module called Principles of Programming. We
+would use a folder structure like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>principles_of_programming
+├── PoP_venv
+├── exercise_1
+├── exercise_2
+├── exercise_3
+└── ...
+</pre></div>
+</div>
+<p>Let’s see how we would set this up. First, <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">open a terminal</span></a>.
+You can also do several of these steps graphically, but the precise steps are
+harder to explain, and are different on different operating systems.</p>
+<p>The terminal will usually open in your home folder. Maybe you want to put the module
+folder straight in your home folder, or maybe you want to put it somewhere else.
+This just comes down to how you organise the files on your computer. On my
+computer, I like to keep this sort of folder in a documents folder called <code class="xref py py-obj docutils literal notranslate"><span class="pre">doc</span></code>.
+So I need to switch into that folder first with the <code class="xref py py-obj docutils literal notranslate"><span class="pre">cd</span></code> (change directory)
+command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> doc
+</pre></div>
+</div>
+<p>Now we create the main module folder using <code class="xref py py-obj docutils literal notranslate"><span class="pre">mkdir</span></code> (make directory):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> mkdir principles_of_programming
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Avoid spaces in names</p>
+<p>Even though spaces are usually allowed in file and folder names, many
+software packages contain bugs which cause them to fail to handle spaces in
+names correctly. It’s therefore good practice not to have spaces in file or
+folder names.</p>
+</div>
+<p>Now we change into the folder we just created:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> principles_of_programming
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Use tab completion</p>
+<p>Most modern terminals (or, rather, the shell program inside) support tab
+completion. This means that you can press the <code class="xref py py-obj docutils literal notranslate"><span class="pre">tab</span></code> key to have the terminal
+complete command and file names. In this example, rather that typing out
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">principles_of_programming</span></code>, you can type <code class="xref py py-obj docutils literal notranslate"><span class="pre">pr</span> <span class="pre">+</span> <span class="pre">tab</span></code> and, so long as this is
+the only name in the current folder starting with <code class="xref py py-obj docutils literal notranslate"><span class="pre">pr</span></code>, the shell will
+insert the rest of the name. If there are more names starting with <code class="xref py py-obj docutils literal notranslate"><span class="pre">pr</span></code> then
+you may have to type more characters before tab completion will work.</p>
+<p>Tab completion is often preferable to typing because it’s not only faster
+but avoids typos.</p>
+</div>
+<p>Next we <a class="reference internal" href="#create-venv"><span class="std std-ref">create the venv</span></a>. We could call it anything we like,
+but we would probably like a name which is short (because it’s going to appear
+at the start of every line in the terminal), describes which venv this is, and
+says that it’s a venv. In this case, the name <code class="xref py py-obj docutils literal notranslate"><span class="pre">PoP_venv</span></code> will do nicely:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m venv PoP_venv
+</pre></div>
+</div>
+<p>When that completes, we’ll need to <span class="xref std std-ref">activate the venv</span>. On Windows we would
+type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> PoP_venv/Scripts/activate
+</pre></div>
+</div>
+<p>While on Mac or Linux it would be:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> PoP_venv/bin/activate
+</pre></div>
+</div>
+<p>Next we’ll install whichever Python packages we need for the module. Let’s
+suppose we just need Jupyter:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> pip3 install jupyter
+</pre></div>
+</div>
+<p>Finally, we’ll need to create the folder for the first exercise on our module.
+If the module is not using GitHub Classroom then you’ll just use <code class="xref py py-obj docutils literal notranslate"><span class="pre">mkdir</span></code> to make a
+folder for each exercise. However for GitHub Classroom modules there will be a
+Git repository to clone for each exercise. As a demonstration, we can use this
+<a class="reference external" href="https://github.com/imperiallearn/exercise_1">example Git repository</a>. Unlike
+most coursework repositories, this one is public so anyone can clone it.
+Assuming we’ve <a class="reference internal" href="git.html#git-windows"><span class="std std-ref">installed Git</span></a>, we can type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> git clone https://github.com/imperiallearn/exercise_1.git
+</pre></div>
+</div>
+<p>If we now examine the contents of the current folder with <code class="xref py py-obj docutils literal notranslate"><span class="pre">ls</span></code> (list) then we
+can see that we have the venv folder and the exercise folder as expected:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> ls
+<span class="go">exercise_1  PoP_venv</span>
+</pre></div>
+</div>
+<p>The <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise_1</span></code> repository contains a simple “Hello World” program written as
+both a Python file and a Jupyter notebook. For example we can run the file
+version thus:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> python3 exercise_1/hello.py
+<span class="go">Hello World!</span>
+</pre></div>
+</div>
+<p>Or we can launch the Jupyter version:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> <span class="nb">cd</span> exercise_1
+<span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> jupyter notebook hello.ipynb
+</pre></div>
+</div>
+<p>This pops up a web browser showing:</p>
+<img alt="_images/jupyter_hello.png" src="_images/jupyter_hello.png" />
 </div>
 </div>
 
