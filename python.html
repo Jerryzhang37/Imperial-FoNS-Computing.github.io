@@ -251,7 +251,7 @@ would type the following in the <a class="reference internal" href="terminal.htm
 </div>
 </div>
 <div class="section" id="recommended-folder-layout-for-a-python-module">
-<h2><span class="section-number">1.6. </span>Recommended folder layout for a Python module<a class="headerlink" href="#recommended-folder-layout-for-a-python-module" title="Permalink to this headline">¶</a></h2>
+<span id="python-folders"></span><h2><span class="section-number">1.6. </span>Recommended folder layout for a Python module<a class="headerlink" href="#recommended-folder-layout-for-a-python-module" title="Permalink to this headline">¶</a></h2>
 <p>In order to do the coursework for a typical module using Python, you’ll want to
 have a venv for the module, so that packages and software you use in different
 modules don’t interfere with each other, and you’ll usually want to have one
@@ -360,6 +360,57 @@ version thus:</p>
 </div>
 <p>This pops up a web browser showing:</p>
 <img alt="_images/jupyter_hello.png" src="_images/jupyter_hello.png" />
+</div>
+<div class="section" id="using-visual-studio-code-with-python">
+<h2><span class="section-number">1.7. </span>Using Visual Studio Code with Python<a class="headerlink" href="#using-visual-studio-code-with-python" title="Permalink to this headline">¶</a></h2>
+<p>Visual Studio Code provides excellent support for editing and debugging Python,
+both plain Python files and Jupyter Notebooks. Visual Studio Code also supports
+Python virtual environments, and revision control in Git.</p>
+<div class="section" id="opening-your-python-project-as-a-workspace">
+<h3><span class="section-number">1.7.1. </span>Opening your Python project as a workspace<a class="headerlink" href="#opening-your-python-project-as-a-workspace" title="Permalink to this headline">¶</a></h3>
+<p>We’ll assume here that you’ve set up your Python folder structure <a class="reference internal" href="#python-folders"><span class="std std-ref">as we
+recommended above</span></a>. One of the reasons for choosing that folder
+structure is that it works well with Visual Studio Code. Having <span class="xref std std-ref">installed
+Visual Studio Code</span>, and launched it, you should see a screen like this:</p>
+<img alt="_images/vscode_welcome.png" src="_images/vscode_welcome.png" />
+<p>Click on <code class="xref py py-obj docutils literal notranslate"><span class="pre">Open</span> <span class="pre">folder...</span></code> and select the module folder from the dialog (in the
+case above, the folder <code class="xref py py-obj docutils literal notranslate"><span class="pre">principles_of_programming)</span></code>. You should see a screen
+somewhat like this:</p>
+<img alt="_images/vscode_principles.png" src="_images/vscode_principles.png" />
+</div>
+<div class="section" id="running-a-python-file">
+<h3><span class="section-number">1.7.2. </span>Running a Python file<a class="headerlink" href="#running-a-python-file" title="Permalink to this headline">¶</a></h3>
+<p>Click on the little arrow <code class="xref py py-obj docutils literal notranslate"><span class="pre">&gt;</span></code> next to <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise_1</span></code> and then click
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">hello.py</span></code> to open it. If this is the first time you’ve opened a Python file in
+Visual Studio code, it may prompt you to install the Python extension, and you
+should agree. It might also prompt you to install a Python linter, which is a
+program which checks your code against the Python style rules. You should agree
+to that too. The result should look something like the following:</p>
+<img alt="_images/vscode_hello_py.png" src="_images/vscode_hello_py.png" />
+<p>There are two important things to note here. The first is the text at the bottom
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8.5</span> <span class="pre">64-bit</span> <span class="pre">('PoP_venv':venv)</span></code>. This shows us which Python installation
+Visual Studio Code is using, and in particular that it’s found our <code class="xref py py-obj docutils literal notranslate"><span class="pre">PoP_venv</span></code>
+virtual environment. Visual Studio will automatically find a virtual environment
+that is in the folder you open, which is one of the reasons for our folder
+layout. The other important feature is the green triangle at the top right.
+Clicking on this will open a terminal and run this code:</p>
+<img alt="_images/vscode_hello_py_output.png" src="_images/vscode_hello_py_output.png" />
+<p>Looking at the bottom left, we can see that Visual Studio Code has opened a
+terminal, activated the virtual environment, and then run Python on our file
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">hello.py</span></code>. The result is the text <code class="xref py py-obj docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">World!</span></code> printed out.</p>
+</div>
+<div class="section" id="opening-a-jupyter-notebook">
+<h3><span class="section-number">1.7.3. </span>Opening a Jupyter notebook<a class="headerlink" href="#opening-a-jupyter-notebook" title="Permalink to this headline">¶</a></h3>
+<p>If we instead click on <code class="xref py py-obj docutils literal notranslate"><span class="pre">hello.ipynb</span></code> then this Jupyter notebook will open. You
+might be asked whether to trust the notebook, and you should agree. The result
+will be something like this:</p>
+<img alt="_images/vscode_hello_ipynb.png" src="_images/vscode_hello_ipynb.png" />
+<p>If you’re used to Jupyter notebooks opening in your web browser, then this may
+look a bit strange, but it’s actually just the same interface, albeit in
+slightly unfamiliar colours. Clicking on the green triangle, or clicking in the
+code box and pressing <code class="xref py py-obj docutils literal notranslate"><span class="pre">shift</span> <span class="pre">+</span> <span class="pre">enter</span></code> will run the code:</p>
+<img alt="_images/vscode_hello_ipynb_output.png" src="_images/vscode_hello_ipynb_output.png" />
+</div>
 </div>
 </div>
 
