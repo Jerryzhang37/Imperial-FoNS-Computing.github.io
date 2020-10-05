@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10. Jupyter &#8212; Installation instructions for FoNS 2020.0 documentation</title>
+    <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="9. Homebrew for Mac" href="homebrew.html" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+<link rel="stylesheet" href="_static/featured.css">
+
+
+<link rel="shortcut icon" href="_static/icon.ico" />
+
+
+  </head><body>
+<div class="wrapper">
+  <a href="index.html"><img src="_static/banner.png" width="900px" alt="FInAT Project Banner" /></a>
+  <div id="access">
+    <div class="menu">
+      <ul>
+          <li class="page_item"><a href="https://github.com/Imperial-FoNS-Computing/FoNS-installation-instructions" title="GitHub">GitHub</a></li>
+      </ul>
+    </div><!-- .menu -->
+  </div><!-- #access -->
+</div><!-- #wrapper -->
+
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="jupyter">
+<span id="id1"></span><h1><span class="section-number">10. </span>Jupyter<a class="headerlink" href="#jupyter" title="Permalink to this headline">¶</a></h1>
+<p>There are currently <a class="reference external" href="https://jupyter.readthedocs.io/en/latest/index.html">two options</a> for Jupyter that are
+relevant here: the “classic” Jupyter notebook interface, and JupyterLab, the
+next-generation user interface for the Jupyter Project. Jupyterlab has a modular
+structure, where you can open several notebooks or files (e.g. HTML, Text,
+Markdowns etc) as tabs in the same window, and basically offers more of an <a class="reference external" href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a>-like
+experience.</p>
+<p>JupyterLab is fast evolving, and will likely replace Jupyter sooner than later.</p>
+<p>We suggest installing both, the classic Jupyter Notebook and Jupyter Lab, as there are certain extensions in the former, such as the nifty <a class="reference external" href="https://rise.readthedocs.io/en/stable/index.html">RISE extension</a>,  that are not yet compatible with the latter.</p>
+<div class="section" id="installing">
+<h2><span class="section-number">10.1. </span>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>Please see project Jupyter’s <a class="reference external" href="http://jupyter.readthedocs.io/en/latest/install.html">instructions for installation</a>, which covers both  Jupyter variants.</p>
+<p>Basically,</p>
+<ul class="simple">
+<li><p><strong>If you already have Python 3</strong>, follow the following
+instructions for your particular OS from the above webpage. We will
+use Python 3 henceforth.</p></li>
+<li><p><strong>If you are a new Python user, or just want to reinstall Python
+(say, to move from Python 2 to 3)</strong> you can install Python+Jupyter
+using <a class="reference external" href="https://www.continuum.io/downloads">Anaconda</a>, by
+downloading Anaconda’s latest Python 3 version.</p></li>
+</ul>
+<div class="section" id="windows">
+<h3><span class="section-number">10.1.1. </span>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
+<p>Your best option is to download and <a class="reference internal" href="python.html#python"><span class="std std-ref">install Anaconda</span></a>, which
+includes Python and Jupyter Notebook (among other useful pckages and utilities).</p>
+</div>
+<div class="section" id="mac">
+<h3><span class="section-number">10.1.2. </span>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h3>
+<p>Your best option is to download and <a class="reference internal" href="python.html#python"><span class="std std-ref">install Anaconda</span></a>, which
+includes Python and Jupyter Notebook (among other useful pckages and utilities).</p>
+</div>
+<div class="section" id="ubuntu-linux">
+<h3><span class="section-number">10.1.3. </span>Ubuntu / Linux<a class="headerlink" href="#ubuntu-linux" title="Permalink to this headline">¶</a></h3>
+<p>If you are an an existing Python 3 user, instead of Anaconda, you may wish to install Jupyter using the Python package manager <code class="xref py py-obj docutils literal notranslate"><span class="pre">pip</span></code> , with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install jupyter
+<span class="gp">$</span> python3 -m pip install jupyterlab
+</pre></div>
+</div>
+<p>If pip is not available, then <a class="reference internal" href="python.html#python"><span class="std std-ref">see this</span></a>.</p>
+</div>
+</div>
+<div class="section" id="language-kernels">
+<h2><span class="section-number">10.2. </span>Language Kernels<a class="headerlink" href="#language-kernels" title="Permalink to this headline">¶</a></h2>
+<p>The Jupyter notebook can support almost <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">100 programming languages</a> (and counting). We will describe the installation of two (IPython and R) because these are likely to be used most commonly across courses.</p>
+<div class="section" id="the-ipython-kernel">
+<h3><span class="section-number">10.2.1. </span>The IPython kernel<a class="headerlink" href="#the-ipython-kernel" title="Permalink to this headline">¶</a></h3>
+<p>The default kernel you will have is IPython (with Python 3 or 2) – the core
+Jupyter kernel. Click on the kernel menu item at the top of your notebook to
+check.</p>
+<p>If you upgraded to Python 3 from 2 <strong>after</strong> installing Jupyter, you will need
+to reinstall Jupyter using <code class="xref py py-obj docutils literal notranslate"><span class="pre">pip</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install jupyter
+</pre></div>
+</div>
+<p>You will then need to relaunch Jupyter. You should see the Python 3 kernel. If
+you want both Python 2 and 3 kernels, <a class="reference external" href="https://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook">see this</a>.</p>
+</div>
+<div class="section" id="the-r-kernel">
+<h3><span class="section-number">10.2.2. </span>The R kernel<a class="headerlink" href="#the-r-kernel" title="Permalink to this headline">¶</a></h3>
+<p>First have a quick look at the <a class="reference external" href="http://jupyter.readthedocs.io/en/latest/projects/kernels.html">Jupyter kernel documentation</a> .</p>
+<p>Now, go to the <a class="reference external" href="https://github.com/IRkernel/IRkernel">IRKernel github</a>, and
+follow the instructions for installing using the <code class="xref py py-obj docutils literal notranslate"><span class="pre">devtools</span></code> package in R (This
+package will also soon be installable through CRAN).</p>
+<p>On Ubuntu 20.04, If you run into errors while installing the  <code class="xref py py-obj docutils literal notranslate"><span class="pre">devtools</span></code> package through R, very likely you might need to install the <code class="xref py py-obj docutils literal notranslate"><span class="pre">curl</span></code> package using <code class="xref py py-obj docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span></code> in a terminal first (read the error messages you get in R).</p>
+<p>After installing the R kernel, relaunch Jupyter as you did above, and
+then check your kernels in the drop-down Jupyter nb menu – you should
+now have both Python and R.</p>
+</div>
+</div>
+<div class="section" id="adding-extensions">
+<h2><span class="section-number">10.3. </span>Adding extensions<a class="headerlink" href="#adding-extensions" title="Permalink to this headline">¶</a></h2>
+<p>You can add some useful additional functionalities to your Jupyter notebook
+interface using (the unofficial) <a class="reference external" href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions">extensions</a>. The list
+of extensions and further instructions for installation can be <a class="reference external" href="http://jupyter-contrib-nbextensions.readthedocs.io/en/latest/">found here</a>. You will
+also probably want to install the <a class="reference external" href="https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator">extensions “configurator”</a>. This
+package will add useful functionalities like <span class="math notranslate nohighlight">\(\LaTeX\)</span> environments and
+TOCs.</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020 Imperial College London.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

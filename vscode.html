@@ -13,6 +13,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Git and GitHub Classroom" href="git.html" />
@@ -105,8 +106,47 @@ following the instructions <a class="reference external" href="https://code.visu
 <div class="section" id="installing-visual-studio-code-on-linux">
 <h2><span class="section-number">3.3. </span>Installing Visual Studio Code on Linux<a class="headerlink" href="#installing-visual-studio-code-on-linux" title="Permalink to this headline">¶</a></h2>
 <p>Microsoft provide Visual Studio Code packages for a number of Linux
-distributions. See the <a href="#id3"><span class="problematic" id="id4">`Visual Studio Code Linux installation webpage
-https://code.visualstudio.com/docs/setup/linux`_</span></a>.</p>
+distributions. See the <a class="reference external" href="https://code.visualstudio.com/docs/setup/linux">Visual Studio Code Linux installation webpage</a>.</p>
+<p>In particular, for Debian and Ubuntu based distributions, the easiest way to install Visual Studio Code is to download and install the <code class="docutils literal notranslate"><span class="pre">.deb</span></code> package (64-bit) from <a class="reference external" href="https://code.visualstudio.com/Download">here</a>, and then through the command line in terminal with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dpkg -i &lt;file&gt;.deb
+</pre></div>
+</div>
+<p>Installing the <code class="docutils literal notranslate"><span class="pre">.deb</span></code> package will automatically install the apt repository and signing key to enable auto-updating of the software using the system’s package manager.</p>
+</div>
+<div class="section" id="customizing-visual-studio-code">
+<h2><span class="section-number">3.4. </span>Customizing Visual Studio Code<a class="headerlink" href="#customizing-visual-studio-code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-extensions">
+<h3><span class="section-number">3.4.1. </span>Adding Extensions<a class="headerlink" href="#adding-extensions" title="Permalink to this headline">¶</a></h3>
+<p>There are a number of Visual Studio Code <a class="reference external" href="https://marketplace.visualstudio.com/">extensions</a> specific to certain programming languages, debuggers, and tools such as a Git repositoy controls support your code development. Please <a class="reference external" href="https://code.visualstudio.com/docs/editor/extension-gallery">see this webpage</a> and <a class="reference external" href="https://code.visualstudio.com/docs/introvideos/extend">this one</a> (also has a video tutorial) for more information and howto’s.</p>
+<p>In particular, you may be interested in the following extensions:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack">Liveshare</a> (Real-time collaborative coding)</p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a> (Add to the inbuilt Visual Studio Code Git capabilities to seamlessly use Git and control Git repositories within the IDE)</p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a> (To impose consistency in code formattiong)</p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python language support</a></p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">R language support</a></p></li>
+<li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a> (Autocomplete directory paths and filenames)</p></li>
+</ul>
+<p>There are scores of other extensions that you might want to try out depending on the programming language or toolset you are using (e.g., <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a>).</p>
+</div>
+<div class="section" id="sending-text-to-terminal">
+<h3><span class="section-number">3.4.2. </span>Sending text to terminal<a class="headerlink" href="#sending-text-to-terminal" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Most code editors will disable sending text to an (usually, embedded) terminal for security reasons. To enable this behavior in Visual Studio Code, do the following (its slightly tricky!):</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Enter <code class="xref py py-obj docutils literal notranslate"><span class="pre">ctrl+shift+P</span></code> in vscode. This will bring up the command “palette” box at the top of the editor.</p></li>
+<li><p>There, search for “keyboard”, which will bring up a few options. from the list, open <code class="xref py py-obj docutils literal notranslate"><span class="pre">Preferences:Open</span> <span class="pre">Keyboard</span> <span class="pre">Shortcuts</span> <span class="pre">File</span></code> (both are <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">json</a> files).</p></li>
+<li><p>Place your key bindings in this file to overwrite the defaults (as it says at the top!). Then, add the following to the json file:</p></li>
+</ul>
+<div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;ctrl+enter&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;workbench.action.terminal.runSelectedText&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Note that this is a <a class="reference external" href="https://docs.python.org/3/library/json.html#module-json" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">json</span></code></a> file format; so, each keybinding is in a separate pair of <code class="xref py py-obj docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>’s, each kebinding specification then separated by commas.</p>
+</div>
 </div>
 </div>
 
