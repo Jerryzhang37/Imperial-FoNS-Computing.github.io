@@ -13,6 +13,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="3. Visual Studio Code" href="vscode.html" />
@@ -59,16 +60,16 @@ Software Hub), R must be installed before trying to install RStudio.</p>
 <div class="section" id="software-hub">
 <h3><span class="section-number">2.1.1. </span>Software Hub<a class="headerlink" href="#software-hub" title="Permalink to this headline">¶</a></h3>
 <p>Navigate to the <a class="reference external" href="https://softwarehub.imperial.ac.uk/">Software Hub</a>, scroll
-down to RStudio (or type it in the search box) and click <code class="xref py py-obj docutils literal notranslate"><span class="pre">Launch</span></code>. The RStudio
+down to RStudio (or type it in the search box) and click <strong class="command">Launch</strong>. The RStudio
 on Software Hub also includes R so you don’t need to install it separately.</p>
 <p>Further information on using the Software Hub is available on the <a class="reference external" href="https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/software-hub/">Imperial ICT
 Software Hub webpage</a>.</p>
 </div>
 <div class="section" id="direct-install">
 <h3><span class="section-number">2.1.2. </span>Direct install<a class="headerlink" href="#direct-install" title="Permalink to this headline">¶</a></h3>
-<p>The current version of R can be obtained from the <a href="#id1"><span class="problematic" id="id2">`</span></a>Comprehensive R Archive</p>
-<p>Network Windows download page &lt;<a class="reference external" href="https://cran.rstudio.com/bin/windows/base/">https://cran.rstudio.com/bin/windows/base/</a>&gt;`__. The click
-on the latest release link (it will be called something like <code class="xref py py-obj docutils literal notranslate"><span class="pre">Download</span> <span class="pre">R</span> <span class="pre">4.0.2</span> <span class="pre">for</span> <span class="pre">Windows</span></code>, but
+<p>The current version of R can be obtained from the <a class="reference external" href="https://cran.rstudio.com/bin/windows/base/">Comprehensive R Archive
+Network Windows download page</a>. The click
+on the latest release link (it will be called something like <strong class="command">Download R 4.0.2 for Windows</strong>, but
 the version may be newer than that). Run the installer and accept all of the
 default options.</p>
 <p>RStudio can be installed from the <a class="reference external" href="https://rstudio.com/products/rstudio/download/#download">RStudio install page</a>. Usually the big
@@ -77,7 +78,7 @@ installer and accept the default options.</p>
 </div>
 <div class="section" id="running-rstudio">
 <h3><span class="section-number">2.1.3. </span>Running RStudio<a class="headerlink" href="#running-rstudio" title="Permalink to this headline">¶</a></h3>
-<p>Simply type <code class="xref py py-obj docutils literal notranslate"><span class="pre">rstudio</span></code> in the search box at the bottom left of your screen.</p>
+<p>Simply type <strong class="command">rstudio</strong> in the search box at the bottom left of your screen.</p>
 <img alt="_images/rstudio.png" src="_images/rstudio.png" />
 </div>
 </div>
@@ -91,8 +92,8 @@ installer and accept the default options.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id3">
-<h3><span class="section-number">2.2.2. </span>Direct install<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3><span class="section-number">2.2.2. </span>Direct install<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>The current version of R can be obtained from the <a class="reference external" href="https://cran.r-project.org/bin/macosx/">Comprehensive R Archive
 Network Mac download page</a>. The click
 on the latest release link (it will be called something like R-4.0.2.pkg, but
@@ -102,10 +103,10 @@ default options.</p>
 blue button will automatically detect the right version. Again, run the
 installer and accept the default options.</p>
 </div>
-<div class="section" id="id4">
-<h3><span class="section-number">2.2.3. </span>Running RStudio<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>You launch RStudio by pressing <code class="xref py py-obj docutils literal notranslate"><span class="pre">⌘</span> <span class="pre">+</span> <span class="pre">space</span></code> to open Spotlight search and
-type <code class="xref py py-obj docutils literal notranslate"><span class="pre">rstudio</span></code> in the resulting search box:</p>
+<div class="section" id="id2">
+<h3><span class="section-number">2.2.3. </span>Running RStudio<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>You launch RStudio by pressing <kbd class="kbd docutils literal notranslate">⌘</kbd> + <kbd class="kbd docutils literal notranslate">space</kbd> to open Spotlight search and
+type <strong class="command">rstudio</strong> in the resulting search box:</p>
 <img alt="_images/spotlight-rstudio.png" src="_images/spotlight-rstudio.png" />
 </div>
 </div>
@@ -124,14 +125,14 @@ example on Ubuntu you would run:</p>
 the <a class="reference external" href="https://cran.r-project.org/bin/linux/">Comprehensive R Archive Network Linux folder</a>.</p>
 <p>You next need to download the RStudio package for your distribution from the <a class="reference external" href="https://rstudio.com/products/rstudio/download/#download">RStudio install page</a>. Once again, the
 install mechanism depends on the distribution. For Fedora and related packages,
-you may be able to simply double click on downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">rpm</span></code> file. This might
-also work with the downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code> file for Ubuntu, but you can also do it in
+you may be able to simply double click on downloaded <strong class="command">.rpm</strong> file. This might
+also work with the downloaded <strong class="command">.deb</strong> file for Ubuntu, but you can also do it in
 the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a> by running the following command in the folder
-containing the downloaded <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code>:</p>
+containing the downloaded <strong class="command">.deb</strong>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt install &lt;deb_file&gt;
 </pre></div>
 </div>
-<p>Obviously you replace <code class="xref py py-obj docutils literal notranslate"><span class="pre">&lt;deb_file&gt;</span></code> with the name of the <code class="xref py py-obj docutils literal notranslate"><span class="pre">deb</span></code> file.</p>
+<p>Obviously you replace <strong class="command">&lt;deb_file&gt;</strong> with the name of the <strong class="command">.deb</strong> file.</p>
 </div>
 </div>
 

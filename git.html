@@ -50,59 +50,59 @@
 <span id="git"></span><h1><span class="section-number">4. </span>Git and GitHub Classroom<a class="headerlink" href="#git-and-github-classroom" title="Permalink to this headline">¶</a></h1>
 <div class="contents local topic" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#introduction" id="id3">Introduction</a></p>
+<li><p><a class="reference internal" href="#introduction" id="id1">Introduction</a></p>
 <ul>
-<li><p><a class="reference internal" href="#what-is-git" id="id4">What is Git?</a></p></li>
-<li><p><a class="reference internal" href="#what-is-github" id="id5">What is GitHub?</a></p></li>
-<li><p><a class="reference internal" href="#what-is-github-classroom" id="id6">What is GitHub Classroom?</a></p></li>
+<li><p><a class="reference internal" href="#what-is-git" id="id2">What is Git?</a></p></li>
+<li><p><a class="reference internal" href="#what-is-github" id="id3">What is GitHub?</a></p></li>
+<li><p><a class="reference internal" href="#what-is-github-classroom" id="id4">What is GitHub Classroom?</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#installing-git-on-windows" id="id7">Installing Git on Windows</a></p>
+<li><p><a class="reference internal" href="#installing-git-on-windows" id="id5">Installing Git on Windows</a></p>
 <ul>
-<li><p><a class="reference internal" href="#direct-download" id="id8">Direct download</a></p></li>
-<li><p><a class="reference internal" href="#software-hub" id="id9">Software Hub</a></p></li>
+<li><p><a class="reference internal" href="#direct-download" id="id6">Direct download</a></p></li>
+<li><p><a class="reference internal" href="#software-hub" id="id7">Software Hub</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#installing-git-on-mac" id="id10">Installing Git on Mac</a></p></li>
-<li><p><a class="reference internal" href="#installing-git-on-linux" id="id11">Installing Git on Linux</a></p></li>
-<li><p><a class="reference internal" href="#check-the-install" id="id12">Check the install</a></p></li>
-<li><p><a class="reference internal" href="#configuring-git" id="id13">Configuring Git</a></p>
+<li><p><a class="reference internal" href="#installing-git-on-mac" id="id8">Installing Git on Mac</a></p></li>
+<li><p><a class="reference internal" href="#installing-git-on-linux" id="id9">Installing Git on Linux</a></p></li>
+<li><p><a class="reference internal" href="#check-the-install" id="id10">Check the install</a></p></li>
+<li><p><a class="reference internal" href="#configuring-git" id="id11">Configuring Git</a></p>
 <ul>
-<li><p><a class="reference internal" href="#your-details" id="id14">Your details</a></p></li>
-<li><p><a class="reference internal" href="#line-endings" id="id15">Line endings</a></p>
+<li><p><a class="reference internal" href="#your-details" id="id12">Your details</a></p></li>
+<li><p><a class="reference internal" href="#line-endings" id="id13">Line endings</a></p>
 <ul>
-<li><p><a class="reference internal" href="#windows" id="id16">Windows</a></p></li>
-<li><p><a class="reference internal" href="#macos-or-linux" id="id17">MacOS or Linux</a></p></li>
+<li><p><a class="reference internal" href="#windows" id="id14">Windows</a></p></li>
+<li><p><a class="reference internal" href="#macos-or-linux" id="id15">MacOS or Linux</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#text-editor" id="id18">Text editor</a></p></li>
+<li><p><a class="reference internal" href="#text-editor" id="id16">Text editor</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#signing-up-to-github" id="id19">Signing up to GitHub</a></p>
+<li><p><a class="reference internal" href="#signing-up-to-github" id="id17">Signing up to GitHub</a></p>
 <ul>
-<li><p><a class="reference internal" href="#obtaining-the-github-student-developer-pack" id="id20">Obtaining the GitHub Student Developer Pack</a></p></li>
+<li><p><a class="reference internal" href="#obtaining-the-github-student-developer-pack" id="id18">Obtaining the GitHub Student Developer Pack</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#doing-coursework-using-github-classroom" id="id21">Doing coursework using GitHub Classroom</a></p>
+<li><p><a class="reference internal" href="#doing-coursework-using-github-classroom" id="id19">Doing coursework using GitHub Classroom</a></p>
 <ul>
-<li><p><a class="reference internal" href="#accepting-the-assignment" id="id22">Accepting the assignment</a></p></li>
-<li><p><a class="reference internal" href="#cloning-the-repository" id="id23">Cloning the repository</a></p></li>
-<li><p><a class="reference internal" href="#editing-exercise-txt" id="id24">Editing <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code></a></p></li>
-<li><p><a class="reference internal" href="#committing-our-changes" id="id25">Committing our changes</a></p>
+<li><p><a class="reference internal" href="#accepting-the-assignment" id="id20">Accepting the assignment</a></p></li>
+<li><p><a class="reference internal" href="#cloning-the-repository" id="id21">Cloning the repository</a></p></li>
+<li><p><a class="reference internal" href="#editing-exercise-txt" id="id22">Editing <strong class="command">exercise.txt</strong></a></p></li>
+<li><p><a class="reference internal" href="#committing-our-changes" id="id23">Committing our changes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#staging-files-for-commit" id="id26">Staging files for commit</a></p></li>
-<li><p><a class="reference internal" href="#the-actual-commit" id="id27">The actual commit</a></p></li>
-<li><p><a class="reference internal" href="#stage-and-commit-in-a-single-command" id="id28">Stage and commit in a single command</a></p></li>
-<li><p><a class="reference internal" href="#pushing-changes-to-github" id="id29">Pushing changes to GitHub</a></p></li>
+<li><p><a class="reference internal" href="#staging-files-for-commit" id="id24">Staging files for commit</a></p></li>
+<li><p><a class="reference internal" href="#the-actual-commit" id="id25">The actual commit</a></p></li>
+<li><p><a class="reference internal" href="#stage-and-commit-in-a-single-command" id="id26">Stage and commit in a single command</a></p></li>
+<li><p><a class="reference internal" href="#pushing-changes-to-github" id="id27">Pushing changes to GitHub</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#autograding" id="id30">Autograding</a></p></li>
+<li><p><a class="reference internal" href="#autograding" id="id28">Autograding</a></p></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="introduction">
-<h2><a class="toc-backref" href="#id3"><span class="section-number">4.1. </span>Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1"><span class="section-number">4.1. </span>Introduction</a><a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://git-scm.com">Git</a> and <a class="reference external" href="https://github.com">GitHub</a> Classroom are
 used in some modules to distribute programming coursework, enable you to manage
 your code while completing the exercises, and then to help with submission.</p>
@@ -114,7 +114,7 @@ introduction to Git and GitHub, you are encouraged to work through the
 excellent <a class="reference external" href="http://swcarpentry.github.io/git-novice/">Git tutorial provided by the Software Carpentry project</a>.</p>
 </div>
 <div class="section" id="what-is-git">
-<h3><a class="toc-backref" href="#id4"><span class="section-number">4.1.1. </span>What is Git?</a><a class="headerlink" href="#what-is-git" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id2"><span class="section-number">4.1.1. </span>What is Git?</a><a class="headerlink" href="#what-is-git" title="Permalink to this headline">¶</a></h3>
 <p>When we’re writing code, we typically don’t just type it out, notice that it
 works, and stop. Instead, the usual cycle looks a bit more like this:</p>
 <ol class="arabic simple">
@@ -131,7 +131,7 @@ exactly what the code used to look like when it worked?</p>
 <p>One answer is to keep saving old versions under different names. This is a bad
 answer for two reasons. The first is that it swiftly descends into a confused
 mess, as anyone who has ever been emailed a Word file named
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">report_draft_final_revised2_johns_comments.doc</span></code> can attest! The second is that
+<strong class="command">report_draft_final_revised2_johns_comments.doc</strong> can attest! The second is that
 the names of files and code objects often matter to programming languages - so
 the mere action of saving your code under a different name can stop it working.</p>
 <p>The right answer to the problems caused by constantly updating code (or any
@@ -150,7 +150,7 @@ project - or even when you edit the same file on two different computers.</p>
 widely used currently available.</p>
 </div>
 <div class="section" id="what-is-github">
-<h3><a class="toc-backref" href="#id5"><span class="section-number">4.1.2. </span>What is GitHub?</a><a class="headerlink" href="#what-is-github" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3"><span class="section-number">4.1.2. </span>What is GitHub?</a><a class="headerlink" href="#what-is-github" title="Permalink to this headline">¶</a></h3>
 <p>Git keeps track of a collection of files stored in a project folder called a
 repository which is kept on your computer. That’s great but what if you want to
 do any of the following?</p>
@@ -160,8 +160,8 @@ do any of the following?</p>
 <li><p>Still have your repository if your computer is lost or your hard disk dies.</p></li>
 </ol>
 <p><a class="reference external" href="https://GitHub.com">GitHub</a> is a cloud service which stores copies of Git
-repositories online. You can <code class="xref py py-obj docutils literal notranslate"><span class="pre">push</span></code> your changes up to GitHub from any computer
-with an internet connection and <code class="xref py py-obj docutils literal notranslate"><span class="pre">pull</span></code> those changes down to any other computer.
+repositories online. You can <strong class="command">push</strong> your changes up to GitHub from any computer
+with an internet connection and <strong class="command">pull</strong> those changes down to any other computer.
 GitHub also integrates with other software development tools such as automatic
 testing frameworks, issue trackers and code review to provide a comprehensive
 software development platform. Depending on the module you are taking, you may
@@ -169,7 +169,7 @@ also use some of these extra features of GitHub, but we will mostly focus on how
 to use the core feature of storing a copy of your repository online.</p>
 </div>
 <div class="section" id="what-is-github-classroom">
-<h3><a class="toc-backref" href="#id6"><span class="section-number">4.1.3. </span>What is GitHub Classroom?</a><a class="headerlink" href="#what-is-github-classroom" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4"><span class="section-number">4.1.3. </span>What is GitHub Classroom?</a><a class="headerlink" href="#what-is-github-classroom" title="Permalink to this headline">¶</a></h3>
 <p>All of the collaborative features of Git and GitHub might sound like overkill
 when all you need to do is complete coding assignments that only you work on.
 However in software development terms, you always have at least one collaborator
@@ -185,17 +185,17 @@ see below, this makes it really easy to obtain the exercise and work with it.</p
 </div>
 </div>
 <div class="section" id="installing-git-on-windows">
-<span id="git-windows"></span><h2><a class="toc-backref" href="#id7"><span class="section-number">4.2. </span>Installing Git on Windows</a><a class="headerlink" href="#installing-git-on-windows" title="Permalink to this headline">¶</a></h2>
+<span id="git-windows"></span><h2><a class="toc-backref" href="#id5"><span class="section-number">4.2. </span>Installing Git on Windows</a><a class="headerlink" href="#installing-git-on-windows" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="direct-download">
-<h3><a class="toc-backref" href="#id8"><span class="section-number">4.2.1. </span>Direct download</a><a class="headerlink" href="#direct-download" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id6"><span class="section-number">4.2.1. </span>Direct download</a><a class="headerlink" href="#direct-download" title="Permalink to this headline">¶</a></h3>
 <p>To install Git directly, navigate to <a class="reference external" href="https://git-scm.com/download/win">the Git Windows download website</a>. If the download doesn’t start
-immediately, click on <code class="xref py py-obj docutils literal notranslate"><span class="pre">Click</span> <span class="pre">here</span> <span class="pre">to</span> <span class="pre">download</span> <span class="pre">manually</span></code>. Run the installer.
+immediately, click on <strong class="command">Click here to download manually</strong>. Run the installer.
 Unless you have specific reasons to do otherwise, it’s reasonable to accept all
-the defaults by clicking <a class="reference external" href="https://docs.python.org/3/library/functions.html#next" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">next</span></code></a> each time.</p>
+the defaults by clicking <strong class="command">next</strong> each time.</p>
 <p>Now proceed to <a class="reference internal" href="#check-git"><span class="std std-ref">check the install</span></a>.</p>
 </div>
 <div class="section" id="software-hub">
-<h3><a class="toc-backref" href="#id9"><span class="section-number">4.2.2. </span>Software Hub</a><a class="headerlink" href="#software-hub" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7"><span class="section-number">4.2.2. </span>Software Hub</a><a class="headerlink" href="#software-hub" title="Permalink to this headline">¶</a></h3>
 <p>Follow the instructions on <a class="reference external" href="https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/software-hub/">the Imperial Software Hub website</a>.</p>
 <p>The version of Git on Software Hub is somewhat older and has compatibility
 issues with the most recent versions of <a class="reference internal" href="vscode.html#visual-studio-code"><span class="std std-ref">Visual Studio Code</span></a>.</p>
@@ -203,7 +203,7 @@ issues with the most recent versions of <a class="reference internal" href="vsco
 </div>
 </div>
 <div class="section" id="installing-git-on-mac">
-<h2><a class="toc-backref" href="#id10"><span class="section-number">4.3. </span>Installing Git on Mac</a><a class="headerlink" href="#installing-git-on-mac" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id8"><span class="section-number">4.3. </span>Installing Git on Mac</a><a class="headerlink" href="#installing-git-on-mac" title="Permalink to this headline">¶</a></h2>
 <p>All recent versions of MacOS come with Git pre-installed. This version is likely
 to be good enough for many students on many modules, though it probably won’t be
 the most recent release.</p>
@@ -217,7 +217,7 @@ for whatever reason, then there are more options on <a class="reference external
 website</a>.</p>
 </div>
 <div class="section" id="installing-git-on-linux">
-<h2><a class="toc-backref" href="#id11"><span class="section-number">4.4. </span>Installing Git on Linux</a><a class="headerlink" href="#installing-git-on-linux" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id9"><span class="section-number">4.4. </span>Installing Git on Linux</a><a class="headerlink" href="#installing-git-on-linux" title="Permalink to this headline">¶</a></h2>
 <p>Every Linux distribution ships Git through its package manager. The easiest way
 to install Git is usually to simply do whatever it is that is normal on your
 distribution to install software. For example on Ubuntu or any other
@@ -237,7 +237,7 @@ Debian-based system you would run this in the terminal:</p>
 correct install line <a class="reference external" href="https://git-scm.com/download/linux">on the Git Linux download website</a>.</p>
 </div>
 <div class="section" id="check-the-install">
-<span id="check-git"></span><h2><a class="toc-backref" href="#id12"><span class="section-number">4.5. </span>Check the install</a><a class="headerlink" href="#check-the-install" title="Permalink to this headline">¶</a></h2>
+<span id="check-git"></span><h2><a class="toc-backref" href="#id10"><span class="section-number">4.5. </span>Check the install</a><a class="headerlink" href="#check-the-install" title="Permalink to this headline">¶</a></h2>
 <p>Check that you’ve got a successfully working Git by running this in the
 <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Opening a terminal</span></a>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version
@@ -251,7 +251,7 @@ correct install line <a class="reference external" href="https://git-scm.com/dow
 <p>Proceed now to <a class="reference internal" href="#configure-git"><span class="std std-ref">configure Git</span></a>.</p>
 </div>
 <div class="section" id="configuring-git">
-<span id="configure-git"></span><h2><a class="toc-backref" href="#id13"><span class="section-number">4.6. </span>Configuring Git</a><a class="headerlink" href="#configuring-git" title="Permalink to this headline">¶</a></h2>
+<span id="configure-git"></span><h2><a class="toc-backref" href="#id11"><span class="section-number">4.6. </span>Configuring Git</a><a class="headerlink" href="#configuring-git" title="Permalink to this headline">¶</a></h2>
 <p>Git needs a little bit of configuration to work smoothly. This configuration
 belongs to the computer you’re running Git on, so you don’t have to do this for
 each project, but you do have to do it for each computer you log into. If you’re
@@ -259,7 +259,7 @@ using Imperial’s lab machines remotely, these all share user home directories 
 you should not need to redo the Git configuration each time you log into a new
 lab machine: one configuration is enough for them all.</p>
 <div class="section" id="your-details">
-<h3><a class="toc-backref" href="#id14"><span class="section-number">4.6.1. </span>Your details</a><a class="headerlink" href="#your-details" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id12"><span class="section-number">4.6.1. </span>Your details</a><a class="headerlink" href="#your-details" title="Permalink to this headline">¶</a></h3>
 <p>First you need to tell Git about your name and email address. This has nothing
 directly to do with the information you provided to GitHub, instead it will just
 be used by Git to label you as the author of the code that you write. To save on
@@ -273,7 +273,7 @@ appropriate:</p>
 </div>
 </div>
 <div class="section" id="line-endings">
-<h3><a class="toc-backref" href="#id15"><span class="section-number">4.6.2. </span>Line endings</a><a class="headerlink" href="#line-endings" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id13"><span class="section-number">4.6.2. </span>Line endings</a><a class="headerlink" href="#line-endings" title="Permalink to this headline">¶</a></h3>
 <p>When a text file, such as a program source file, contains a line break, this is
 represented by a special invisible character. Unfortunately, it’s not the same
 character on different operating systems, which can make a bit of a mess when a
@@ -281,14 +281,14 @@ file is created on one operating system, and then edited on another - such as
 might happen if your lecturer uses a different operating system for you. We can
 set up Git to automatically clean up this mess in most cases.</p>
 <div class="section" id="windows">
-<h4><a class="toc-backref" href="#id16"><span class="section-number">4.6.2.1. </span>Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id14"><span class="section-number">4.6.2.1. </span>Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
 <p>Run the following command in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Git Bash terminal</span></a>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf <span class="nb">true</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="macos-or-linux">
-<h4><a class="toc-backref" href="#id17"><span class="section-number">4.6.2.2. </span>MacOS or Linux</a><a class="headerlink" href="#macos-or-linux" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id15"><span class="section-number">4.6.2.2. </span>MacOS or Linux</a><a class="headerlink" href="#macos-or-linux" title="Permalink to this headline">¶</a></h4>
 <p>Run the following command in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf input
 </pre></div>
@@ -296,10 +296,10 @@ set up Git to automatically clean up this mess in most cases.</p>
 </div>
 </div>
 <div class="section" id="text-editor">
-<h3><a class="toc-backref" href="#id18"><span class="section-number">4.6.3. </span>Text editor</a><a class="headerlink" href="#text-editor" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id16"><span class="section-number">4.6.3. </span>Text editor</a><a class="headerlink" href="#text-editor" title="Permalink to this headline">¶</a></h3>
 <p>Git sometimes needs you to write a text comment. When this is the case, it will
 launch a text editor to enable you to type the comment in. If you don’t have
-strong preferences for a particular editor, then <code class="xref py py-obj docutils literal notranslate"><span class="pre">nano</span></code> is a good choice, so run
+strong preferences for a particular editor, then <strong class="command">nano</strong> is a good choice, so run
 the following line in the terminal:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
 </pre></div>
@@ -309,7 +309,7 @@ Carpentry instructions</a>.</p>
 </div>
 </div>
 <div class="section" id="signing-up-to-github">
-<h2><a class="toc-backref" href="#id19"><span class="section-number">4.7. </span>Signing up to GitHub</a><a class="headerlink" href="#signing-up-to-github" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id17"><span class="section-number">4.7. </span>Signing up to GitHub</a><a class="headerlink" href="#signing-up-to-github" title="Permalink to this headline">¶</a></h2>
 <p>You will need your own GitHub account. This is completely
 separate from your Imperial College computer account so you need to sign up
 separately. If you’ve already got a GitHub account then you don’t need another
@@ -334,7 +334,7 @@ for your Imperial computer account.</p>
 frameborder="0" allow="autoplay; fullscreen"
 allowfullscreen></iframe></div>
 <div class="section" id="obtaining-the-github-student-developer-pack">
-<h3><a class="toc-backref" href="#id20"><span class="section-number">4.7.1. </span>Obtaining the GitHub Student Developer Pack</a><a class="headerlink" href="#obtaining-the-github-student-developer-pack" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id18"><span class="section-number">4.7.1. </span>Obtaining the GitHub Student Developer Pack</a><a class="headerlink" href="#obtaining-the-github-student-developer-pack" title="Permalink to this headline">¶</a></h3>
 <p>GitHub provide upgraded “pro” accounts and a bundle of other online tools for
 free to students. You don’t need this for your Imperial modules, but some of it
 may be nice to have if you intend to do more software development as a student.
@@ -346,7 +346,7 @@ GitHub account</a>.</p>
 </div>
 </div>
 <div class="section" id="doing-coursework-using-github-classroom">
-<span id="github-classroom-exercise"></span><h2><a class="toc-backref" href="#id21"><span class="section-number">4.8. </span>Doing coursework using GitHub Classroom</a><a class="headerlink" href="#doing-coursework-using-github-classroom" title="Permalink to this headline">¶</a></h2>
+<span id="github-classroom-exercise"></span><h2><a class="toc-backref" href="#id19"><span class="section-number">4.8. </span>Doing coursework using GitHub Classroom</a><a class="headerlink" href="#doing-coursework-using-github-classroom" title="Permalink to this headline">¶</a></h2>
 <p>Some modules use GitHub Classroom to distribute, manage, and submit
 computational coursework. This is a trivial example which shows you how to
 obtain and work with Git and GitHub to do your coursework.</p>
@@ -355,7 +355,7 @@ obtain and work with Git and GitHub to do your coursework.</p>
 frameborder="0" allow="autoplay; fullscreen"
 allowfullscreen></iframe></div>
 <div class="section" id="accepting-the-assignment">
-<h3><a class="toc-backref" href="#id22"><span class="section-number">4.8.1. </span>Accepting the assignment</a><a class="headerlink" href="#accepting-the-assignment" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id20"><span class="section-number">4.8.1. </span>Accepting the assignment</a><a class="headerlink" href="#accepting-the-assignment" title="Permalink to this headline">¶</a></h3>
 <p>For each GitHub Classroom assignment, your module will provide access to a link
 that you can use to accept the assignment. In this case, there is a tiny toy
 assignment created just for this exercise. <a class="reference external" href="https://classroom.github.com/a/cChf4oeV">Accept the assignment by clicking
@@ -379,7 +379,7 @@ else, such as on a module website or on Blackboard. This time, we see this:</p>
 <p>So what we have to do is:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>Edit <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code> to replace “Hello World” with “Hello Mars!”</p></li>
+<li><p>Edit <strong class="command">exercise.txt</strong> to replace “Hello World” with “Hello Mars!”</p></li>
 <li><p>Commit this change.</p></li>
 <li><p>Push the result to GitHub.</p></li>
 </ol>
@@ -388,7 +388,7 @@ else, such as on a module website or on Blackboard. This time, we see this:</p>
 we’ll need to clone the repository to our computer.</p>
 </div>
 <div class="section" id="cloning-the-repository">
-<h3><a class="toc-backref" href="#id23"><span class="section-number">4.8.2. </span>Cloning the repository</a><a class="headerlink" href="#cloning-the-repository" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id21"><span class="section-number">4.8.2. </span>Cloning the repository</a><a class="headerlink" href="#cloning-the-repository" title="Permalink to this headline">¶</a></h3>
 <p>Your new repository currently exists only on <a class="reference external" href="https://github.com">GitHub</a>, but
 you need a local copy on your machine (or on a remote machine that you’re logged
 into) in order to work on it. This is called cloning the repository. Here
@@ -396,14 +396,14 @@ we show how to do this using commands in the terminal, because this approach is
 the most likely to be available on all systems.
 So, start by <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">opening a terminal</span></a>.</p>
 <p>Next, you will need the URL of your GitHub repository. On the repository
-webpage, click on the large green <code class="xref py py-obj docutils literal notranslate"><span class="pre">Code</span></code> button on the right:</p>
+webpage, click on the large green <strong class="command">Code</strong> button on the right:</p>
 <img alt="_images/git_clone.png" src="_images/git_clone.png" />
 <p>Click on the little picture of a clipboard to copy the URL. Now, back in your
-terminal type (without pressing <code class="xref py py-obj docutils literal notranslate"><span class="pre">enter</span></code>):</p>
+terminal type (without pressing <kbd class="kbd docutils literal notranslate">enter</kbd>):</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone
 </pre></div>
 </div>
-<p>Paste the URL you copied into the terminal after <code class="xref py py-obj docutils literal notranslate"><span class="pre">clone</span></code> and then press <code class="xref py py-obj docutils literal notranslate"><span class="pre">enter</span></code>.
+<p>Paste the URL you copied into the terminal after <strong class="command">clone</strong> and then press <kbd class="kbd docutils literal notranslate">enter</kbd>.
 If you are asked for your GitHub username and password, enter them, and the
 repository will download. The process should look a little like this:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
@@ -418,33 +418,33 @@ repository will download. The process should look a little like this:</p>
 </div>
 <p>This will create a new folder in the current folder containing the repository.
 The folder will have the same name as the repository on GitHub, so in this case
-it’s called <code class="xref py py-obj docutils literal notranslate"><span class="pre">fons-test-assignment-dham-test</span></code>. The command to change the current
-folder is <code class="xref py py-obj docutils literal notranslate"><span class="pre">cd</span></code> (for “change directory”) so we now change into our repository:</p>
+it’s called <strong class="command">fons-test-assignment-dham-test</strong>. The command to change the current
+folder is <strong class="command">cd</strong> (for “change directory”) so we now change into our repository:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> fons-test-assignment-dham-test
 </pre></div>
 </div>
 <p>We can now check that we’re in the folder we think we’re in by running the
-command <a class="reference external" href="https://docs.python.org/3/library/pwd.html#module-pwd" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pwd</span></code></a> (“print working directory”):</p>
+command <strong class="command">pwd</strong> (“print working directory”):</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">pwd</span>
 <span class="gp">$</span> /Users/dham/fons-test-assignment-dham-test
 </pre></div>
 </div>
-<p>This shows me that we’re in the <code class="xref py py-obj docutils literal notranslate"><span class="pre">fons-test-assignment-dham-test</span></code> folder in my user
-folder (<code class="xref py py-obj docutils literal notranslate"><span class="pre">/Users/dham</span></code>), which is what I expect.</p>
+<p>This shows me that we’re in the <strong class="command">fons-test-assignment-dham-test</strong> folder in my user
+folder (<strong class="command">/Users/dham</strong>), which is what I expect.</p>
 </div>
 <div class="section" id="editing-exercise-txt">
-<h3><a class="toc-backref" href="#id24"><span class="section-number">4.8.3. </span>Editing <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code></a><a class="headerlink" href="#editing-exercise-txt" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id22"><span class="section-number">4.8.3. </span>Editing <strong class="command">exercise.txt</strong></a><a class="headerlink" href="#editing-exercise-txt" title="Permalink to this headline">¶</a></h3>
 <p>I can now check out what’s in
-this folder with the <code class="xref py py-obj docutils literal notranslate"><span class="pre">ls</span></code> command (for “list”):</p>
+this folder with the <strong class="command">ls</strong> command (for “list”):</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ls
 <span class="go">LICENSE             README.rst      exercise.txt    tests</span>
 </pre></div>
 </div>
-<p>There are four files or folders here, one of which is <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code>, which is
+<p>There are four files or folders here, one of which is <strong class="command">exercise.txt</strong>, which is
 the one I need to edit. I could use any text editor for this purpose, for
 example if I have Visual Studio Code installed then this would be a very
-suitable editor. However here we’ll only assume that you’ve installed <code class="xref py py-obj docutils literal notranslate"><span class="pre">Git</span></code> so
-we’ll use the very basic editor <code class="xref py py-obj docutils literal notranslate"><span class="pre">nano</span></code>, which is almost certainly installed:</p>
+suitable editor. However here we’ll only assume that you’ve installed <strong class="command">Git</strong> so
+we’ll use the very basic editor <strong class="command">nano</strong>, which is almost certainly installed:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nano exercise.txt
 </pre></div>
 </div>
@@ -457,17 +457,17 @@ the line by clicking with the mouse, that won’t work (nano is far too basic fo
 that!)</p>
 <p>Once you’ve edited the line, you need to save the file and quit nano. Helpfully,
 nano shows a lot of its options along the bottom of the screen. We just need to
-know that the caret symbol (<code class="xref py py-obj docutils literal notranslate"><span class="pre">^</span></code>) stands for the <code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span></code> key. So we press
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span> <span class="pre">+</span> <span class="pre">O</span></code> to write out (save) our changes (Note for Mac users, this really
-does mean the <code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span></code> key, and not ⌘). Nano will offer us the option of
-changing the filename, but we don’t want to do that so we just press <code class="xref py py-obj docutils literal notranslate"><span class="pre">enter</span></code> to
+know that the caret symbol (<strong class="command">^</strong>) stands for the <strong class="command">control</strong> key. So we press
+<kbd class="kbd docutils literal notranslate">control</kbd> + <kbd class="kbd docutils literal notranslate">O</kbd> to write out (save) our changes (Note for Mac users, this really
+does mean the <kbd class="kbd docutils literal notranslate">control</kbd> key, and not <kbd class="kbd docutils literal notranslate">⌘</kbd>). Nano will offer us the option of
+changing the filename, but we don’t want to do that so we just press <kbd class="kbd docutils literal notranslate">enter</kbd> to
 save to the same file:</p>
 <img alt="_images/nano-write-out.png" src="_images/nano-write-out.png" />
-<p>Next we quit nano by typing <code class="xref py py-obj docutils literal notranslate"><span class="pre">control</span> <span class="pre">+</span> <span class="pre">X</span></code>.</p>
+<p>Next we quit nano by typing <kbd class="kbd docutils literal notranslate">control</kbd> + <kbd class="kbd docutils literal notranslate">X</kbd>.</p>
 </div>
 <div class="section" id="committing-our-changes">
-<h3><a class="toc-backref" href="#id25"><span class="section-number">4.8.4. </span>Committing our changes</a><a class="headerlink" href="#committing-our-changes" title="Permalink to this headline">¶</a></h3>
-<p>Now that we’ve changed <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code>, we need to tell Git to record this
+<h3><a class="toc-backref" href="#id23"><span class="section-number">4.8.4. </span>Committing our changes</a><a class="headerlink" href="#committing-our-changes" title="Permalink to this headline">¶</a></h3>
+<p>Now that we’ve changed <strong class="command">exercise.txt</strong>, we need to tell Git to record this
 change. Each change (to one or many files) that we tell Git about is called a
 “commit” and the process is called “committing”. First, we take a look at what
 Git can currently see about our repository. The command for this, indeed the go
@@ -486,30 +486,30 @@ repository, is:</p>
 </pre></div>
 </div>
 <p>Let’s pull this apart line by line. The first line says that we’re on the
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">master</span></code> branch. Branches are a somewhat more advanced feature, but here we only
-need to understand that <code class="xref py py-obj docutils literal notranslate"><span class="pre">master</span></code> is the default name for the main place to store
+<strong class="command">master</strong> branch. Branches are a somewhat more advanced feature, but here we only
+need to understand that <strong class="command">master</strong> is the default name for the main place to store
 commits in a Git repository.</p>
 <p>To understand the second line, we need to know that Git, by default, calls our
-repository on GitHub <code class="xref py py-obj docutils literal notranslate"><span class="pre">origin</span></code>. So the second line means that, as far as Git can
+repository on GitHub <strong class="command">origin</strong>. So the second line means that, as far as Git can
 see, every commit that exists on our machine is also on GitHub, and vice versa.</p>
 <p>Next comes a blank line, we’ll come back to what might appear there shortly. The
 next line says “Changes not staged for commit”. This means that Git can see that
 these files have changed or have been added, but Git has not been told that they
 should be committed. Git is also very helpful in telling us what we probably
 want to do next, so we are informed that we can tell Git that we intend to
-commit a file using <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>, or we can undo the changes in a file back to the
-last committed version using <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span></code>. Finally, Git tells us that right now
-there are no changes added to commit, so we either need to use <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> or the
-shortcut version <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-a</span></code>. We’ll come back to the second of those
-presently, but first let’s learn about <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>.</p>
+commit a file using <strong class="command">git add</strong>, or we can undo the changes in a file back to the
+last committed version using <strong class="command">git restore</strong>. Finally, Git tells us that right now
+there are no changes added to commit, so we either need to use <strong class="command">git add</strong> or the
+shortcut version <strong class="command">git commit -a</strong>. We’ll come back to the second of those
+presently, but first let’s learn about <strong class="command">git add</strong>.</p>
 <div class="section" id="staging-files-for-commit">
-<h4><a class="toc-backref" href="#id26"><span class="section-number">4.8.4.1. </span>Staging files for commit</a><a class="headerlink" href="#staging-files-for-commit" title="Permalink to this headline">¶</a></h4>
-<p>We want to commit our changes to <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code>, so we tell Git to add it to the
+<h4><a class="toc-backref" href="#id24"><span class="section-number">4.8.4.1. </span>Staging files for commit</a><a class="headerlink" href="#staging-files-for-commit" title="Permalink to this headline">¶</a></h4>
+<p>We want to commit our changes to <strong class="command">exercise.txt</strong>, so we tell Git to add it to the
 list of files to be committed:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git add exercise.txt</span>
 </pre></div>
 </div>
-<p>We can check what that did by running <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>:</p>
+<p>We can check what that did by running <strong class="command">git status</strong>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is up to date with &#39;origin/master&#39;.</span>
@@ -520,14 +520,14 @@ list of files to be committed:</p>
 </pre></div>
 </div>
 <p>The first two lines of the output are unchanged, but now we see that
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code> appears on the list of changes to be committed. We say that the
+<strong class="command">exercise.txt</strong> appears on the list of changes to be committed. We say that the
 changes are “staged” for commit. Git once again helpfully tells us that if we
-didn’t mean to do that then we should use the command <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span> <span class="pre">--staged</span></code> to
-unstage the file. However, we did mean to stage <code class="xref py py-obj docutils literal notranslate"><span class="pre">exercise.txt</span></code> so now we can go
+didn’t mean to do that then we should use the command <strong class="command">git restore --staged</strong> to
+unstage the file. However, we did mean to stage <strong class="command">exercise.txt</strong> so now we can go
 on to make the actual commit.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Some sites on the internet advocate the following version of <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>:</p>
+<p>Some sites on the internet advocate the following version of <strong class="command">git add</strong>:</p>
 <div class="badcode docutils container">
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git add -A
 </pre></div>
@@ -539,11 +539,11 @@ committed version. This can include any number of automatically generated
 binary files that you have generated or that your computer uses to manage
 the file system. Committing these files makes a complete mess of your
 repository and can cause conflicts if you try to clone your repository on
-another machine. Don’t use <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-A</span></code>!</p>
+another machine. Don’t use <strong class="command">git add -A</strong>!</p>
 </div>
 </div>
 <div class="section" id="the-actual-commit">
-<h4><a class="toc-backref" href="#id27"><span class="section-number">4.8.4.2. </span>The actual commit</a><a class="headerlink" href="#the-actual-commit" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id25"><span class="section-number">4.8.4.2. </span>The actual commit</a><a class="headerlink" href="#the-actual-commit" title="Permalink to this headline">¶</a></h4>
 <p>Having staged the file(s) for commit, we need to actually make the commit. We do
 this with the following command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git commit -m <span class="s2">&quot;Changed World to Mars&quot;</span>
@@ -551,13 +551,13 @@ this with the following command:</p>
 <span class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</span>
 </pre></div>
 </div>
-<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> tells Git to commit all staged files. Git always needs a message
-describing what has changed. I’ve provided this by passing the <code class="xref py py-obj docutils literal notranslate"><span class="pre">-m</span></code> option
+<p><strong class="command">git commit</strong> tells Git to commit all staged files. Git always needs a message
+describing what has changed. I’ve provided this by passing the <strong class="command">-m</strong> option
 followed by the commit message in quotation marks. If I were to leave off the
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">-m</span></code> option and commit message, then Git would open the text editor I configured
+<strong class="command">-m</strong> option and commit message, then Git would open the text editor I configured
 earlier (nano) for me to enter the commit message. I would save the commit
 message and quit the editor, after which the commit would go ahead as above.</p>
-<p>Let’s use our go to command, <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> to see what we’ve done:</p>
+<p>Let’s use our go to command, <strong class="command">git status</strong> to see what we’ve done:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is ahead of &#39;origin/master&#39; by 1 commit.</span>
@@ -567,27 +567,27 @@ message and quit the editor, after which the commit would go ahead as above.</p>
 </pre></div>
 </div>
 <p>This is now quite different from what we’ve seen before. We’re still on branch
-master, but now we’re informed that we’re ahead of <code class="xref py py-obj docutils literal notranslate"><span class="pre">origin/master</span></code> by one
+master, but now we’re informed that we’re ahead of <strong class="command">origin/master</strong> by one
 commit. This is because we’ve made a commit locally on our machine, but we
 haven’t yet pushed that change up to GitHub. Git helpfully informs us that we
-could remedy this situation using <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>. Because we’ve committed all the
+could remedy this situation using <strong class="command">git push</strong>. Because we’ve committed all the
 changes we made, we’re also informed that there is nothing more to commit.</p>
 <p>Before we proceed to pushing our changes to GitHub, we’ll take a look at a
 quicker way to stage and commit changes in a single command.</p>
 </div>
 <div class="section" id="stage-and-commit-in-a-single-command">
-<h4><a class="toc-backref" href="#id28"><span class="section-number">4.8.4.3. </span>Stage and commit in a single command</a><a class="headerlink" href="#stage-and-commit-in-a-single-command" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id26"><span class="section-number">4.8.4.3. </span>Stage and commit in a single command</a><a class="headerlink" href="#stage-and-commit-in-a-single-command" title="Permalink to this headline">¶</a></h4>
 <p>Most of the time, you will make changes to one or more files that Git already
 knows about. In these circumstances, there’s a shortcut command, and it’s one
-that Git already hinted to us about. Instead of separately running <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code>
-followed by <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>, we can use <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-a</span></code>. We still need to provide a
+that Git already hinted to us about. Instead of separately running <strong class="command">git add</strong>
+followed by <strong class="command">git commit</strong>, we can use <strong class="command">git commit -a</strong>. We still need to provide a
 commit message, so the equivalent to the two commands above would be:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git commit -am <span class="s2">&quot;Changed World to Mars&quot;</span>
 <span class="go">[master 5a4a79c] Changed World to Mars</span>
 <span class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</span>
 </pre></div>
 </div>
-<p>Now if we type <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, we discover we are in exactly the same state as
+<p>Now if we type <strong class="command">git status</strong>, we discover we are in exactly the same state as
 when we type the two commands separately:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
 <span class="go">On branch master</span>
@@ -599,7 +599,7 @@ when we type the two commands separately:</p>
 </div>
 </div>
 <div class="section" id="pushing-changes-to-github">
-<h4><a class="toc-backref" href="#id29"><span class="section-number">4.8.4.4. </span>Pushing changes to GitHub</a><a class="headerlink" href="#pushing-changes-to-github" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id27"><span class="section-number">4.8.4.4. </span>Pushing changes to GitHub</a><a class="headerlink" href="#pushing-changes-to-github" title="Permalink to this headline">¶</a></h4>
 <p>The final stage in the commit process is to push the changes we have made up to
 GitHub:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git push
@@ -619,8 +619,8 @@ and password. The output includes quite a lot of detail that we currently don’
 care about, but the last two lines tell us which GitHub repository we were
 pushing to, and that we pushed the local master branch to the GitHub master
 branch.</p>
-<p>If we now type <code class="xref py py-obj docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, we find that we are no longer ahead of
-<code class="xref py py-obj docutils literal notranslate"><span class="pre">origin/master</span></code>:</p>
+<p>If we now type <strong class="command">git status</strong>, we find that we are no longer ahead of
+<strong class="command">origin/master</strong>:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is up to date with &#39;origin/master&#39;.</span>
@@ -631,7 +631,7 @@ branch.</p>
 <p>If we turn back to the repository website on GitHub, we can also see that the commit has arrived:</p>
 <img alt="_images/github_post_commit.png" src="_images/github_post_commit.png" />
 <p>Notice that we can see the commit message both in the blue bar at the top of the
-file list, and next to the file that we changed. By clicking on the <code class="xref py py-obj docutils literal notranslate"><span class="pre">commits</span></code>
+file list, and next to the file that we changed. By clicking on the <strong class="command">commits</strong>
 link at the right hand side of the blue bar, we can see a list of all the
 changes that have ever happened on the master branch of our repository:</p>
 <img alt="_images/github_commit_list.png" src="_images/github_commit_list.png" />
@@ -642,7 +642,7 @@ click on the title of the commit that we just made, then we find:</p>
 </div>
 </div>
 <div class="section" id="autograding">
-<h3><a class="toc-backref" href="#id30"><span class="section-number">4.8.5. </span>Autograding</a><a class="headerlink" href="#autograding" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id28"><span class="section-number">4.8.5. </span>Autograding</a><a class="headerlink" href="#autograding" title="Permalink to this headline">¶</a></h3>
 <p>Notice in the commit list above that the final (top) commit has a green tick
 mark next to it, while the previous commit has a red cross. These marks appear
 because this exercise has autograding set up in GitHub classroom. Autograding is
@@ -650,7 +650,7 @@ a mechanism for automatically running tests on each commit to provide immediate
 feedback as to the correctness of the work. Autograding is the generic term for
 this sort of automated testing when applied to coursework. It doesn’t
 necessarily imply that you will receive marks for passing the tests. If we click
-on the green tick and then on <code class="xref py py-obj docutils literal notranslate"><span class="pre">details</span></code>, we can see a little more information:</p>
+on the green tick and then on <strong class="command">details</strong>, we can see a little more information:</p>
 <img alt="_images/github_autograding_pass.png" src="_images/github_autograding_pass.png" />
 <p>This case isn’t all that interesting, because we’re passing everything.
 It’s actually more interesting to go back and click on the red cross:</p>

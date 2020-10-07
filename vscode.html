@@ -81,7 +81,7 @@ will immediately be prompted to update.</p>
 <div class="section" id="homebrew">
 <h3><span class="section-number">3.2.1. </span>HomeBrew<a class="headerlink" href="#homebrew" title="Permalink to this headline">¶</a></h3>
 <p>If you have <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">installed homebrew</span></a> then you can install Visual
-Studio Code by <span class="xref std std-ref">opening a terminal</span> and running this command:</p>
+Studio Code by <a class="reference internal" href="terminal.html#terminal-mac"><span class="std std-ref">opening a terminal</span></a> and running this command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew cask install visual-studio-code
 </pre></div>
 </div>
@@ -95,8 +95,8 @@ Visual Studio Code from the terminal with this command:</p>
 <div class="section" id="id2">
 <h3><span class="section-number">3.2.2. </span>Direct download<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Follow the <a class="reference external" href="https://code.visualstudio.com/docs?dv=osx">official MacOS Visual Studio Code download link</a>. Rather than an installer, this
-directly downloads the program itself. Open up the Finder (press <code class="xref py py-obj docutils literal notranslate"><span class="pre">⌘</span> <span class="pre">+</span> <span class="pre">space</span></code> and
-type <code class="xref py py-obj docutils literal notranslate"><span class="pre">finder</span></code> then press <code class="xref py py-obj docutils literal notranslate"><span class="pre">enter</span></code> (⏎)) and copy Visual Studio Code from the
+directly downloads the program itself. Open up the Finder (press <kbd class="kbd docutils literal notranslate">⌘</kbd> + <kbd class="kbd docutils literal notranslate">space</kbd> and
+type <strong class="command">finder</strong> then press <kbd class="kbd docutils literal notranslate">enter</kbd> (<kbd class="kbd docutils literal notranslate">⏎</kbd>)) and copy Visual Studio Code from the
 Downloads folder to the Applications folder.</p>
 <p>If you want to be able to start Visual Studio Code from the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Opening a terminal</span></a>,
 then you’ll need to do a little more setup from inside the program itself,
@@ -135,8 +135,8 @@ distributions. See the <a class="reference external" href="https://code.visualst
 <div><p>Most code editors will disable sending text to an (usually, embedded) terminal for security reasons. To enable this behaviour in Visual Studio Code, do the following (its slightly tricky!):</p>
 </div></blockquote>
 <ul class="simple">
-<li><p>Enter <code class="xref py py-obj docutils literal notranslate"><span class="pre">ctrl+shift+P</span></code> in vscode. This will bring up the command “palette” box at the top of the editor.</p></li>
-<li><p>There, search for “keyboard”, which will bring up a few options. from the list, open <code class="xref py py-obj docutils literal notranslate"><span class="pre">Preferences:Open</span> <span class="pre">Keyboard</span> <span class="pre">Shortcuts</span> <span class="pre">File</span></code> (both are <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">json</a> files).</p></li>
+<li><p>Press <kbd class="kbd docutils literal notranslate">control</kbd> + <kbd class="kbd docutils literal notranslate">shift</kbd> + <strong class="command">P</strong> in vscode. This will bring up the command “palette” box at the top of the editor.</p></li>
+<li><p>There, search for “keyboard”, which will bring up a few options. from the list, open <strong class="command">Preferences:Open Keyboard Shortcuts File</strong> (both are <a class="reference external" href="https://en.wikipedia.org/wiki/JSON">json</a> files).</p></li>
 <li><p>Place your key bindings in this file to overwrite the defaults (as it says at the top!). Then, add the following to the json file:</p></li>
 </ul>
 <div class="highlight-JSON notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
@@ -145,7 +145,7 @@ distributions. See the <a class="reference external" href="https://code.visualst
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>Note that this is a <a class="reference external" href="https://docs.python.org/3/library/json.html#module-json" title="(in Python v3.8)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">json</span></code></a> file format; so, each keybinding is in a separate pair of <code class="xref py py-obj docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code>’s, each keybinding specification then separated by commas.</p>
+<p>Note that this is a <strong class="command">json</strong> file format; so, each keybinding is in a separate pair of <strong class="command">{ }</strong>’s, each keybinding specification then separated by commas.</p>
 </div>
 </div>
 </div>
