@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7. Installing Linux &#8212; Installation instructions for FoNS 2020.0 documentation</title>
+    <title>7. Obtaining a Linux/Unix environment &#8212; Installation instructions for FoNS 2020.0 documentation</title>
     <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -46,18 +46,84 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="installing-linux">
-<h1><span class="section-number">7. </span>Installing Linux<a class="headerlink" href="#installing-linux" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="obtaining-a-linux-unix-environment">
+<span id="linux"></span><h1><span class="section-number">7. </span>Obtaining a Linux/Unix environment<a class="headerlink" href="#obtaining-a-linux-unix-environment" title="Permalink to this headline">¶</a></h1>
+<p>Unix is a family of operating systems which are widely used in science. In
+particular, almost all supercomputers run Linux, which is one of the Unix
+operating systems. Unix systems are preferred for many programming tasks, so you
+may find it advantageous to have a Unix environment available to you on your
+computer.</p>
 <p>We recommend Ubuntu as the go to Linux distribution for students and staff as
 there is some level of ICT support for it. Advanced users are free to use their
 own distribution such as Fedora, Mint, etc.</p>
-<div class="section" id="installing-ubuntu">
-<h2><span class="section-number">7.1. </span>Installing Ubuntu<a class="headerlink" href="#installing-ubuntu" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="obtaining-linux-unix-from-windows-10">
+<h2><span class="section-number">7.1. </span>Obtaining Linux/Unix from Windows 10<a class="headerlink" href="#obtaining-linux-unix-from-windows-10" title="Permalink to this headline">¶</a></h2>
+<p>If you have a Windows 10 computer then you have three options for obtaining a
+Linux environment:</p>
+<div class="section" id="windows-subsystem-for-linux">
+<h3><span class="section-number">7.1.1. </span>Windows subsystem for Linux<a class="headerlink" href="#windows-subsystem-for-linux" title="Permalink to this headline">¶</a></h3>
+<p>Windows subsystem for Linux is the in-built mechanism for obtaining a Linux
+environment that runs inside your exising Windows operating system. Follow the
+<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">official Microsoft WSL installation instructions</a>. Of the options
+on that page, you probably want to choose WSL 2 rather than WSL 1, and you
+probably want to install the most recent version of Ubuntu offered.</p>
+</div>
+<div class="section" id="run-linux-in-a-virtual-machine">
+<span id="virtual-machine"></span><h3><span class="section-number">7.1.2. </span>Run Linux in a Virtual machine<a class="headerlink" href="#run-linux-in-a-virtual-machine" title="Permalink to this headline">¶</a></h3>
+<p>A Virtual Machine is another mechanism for running one operating system inside another
+one. Imperial provides licences for VMWare, which is one popular virtual machine
+framework. Follow <a class="reference external" href="https://www.imperial.ac.uk/admin-services/ict/self-service/computers-printing/devices-and-software/get-software/get-software-for-students/vmware/">Imperial’s instructions to obtain VMWare</a>.</p>
+<p>Once you have VMWare, you will need to create a virtual machine running Ubuntu
+(or whichever other host operating system you want). There are many tutorials on
+this all over the web. For example you might follow this <a class="reference external" href="https://linuxhint.com/install_ubuntu_vmware_workstation/">tutorial on installing
+Ubuntu on VMWare</a>.</p>
+</div>
+<div class="section" id="install-linux-alongside-or-instead-of-windows">
+<h3><span class="section-number">7.1.3. </span>Install Linux alongside or instead of Windows<a class="headerlink" href="#install-linux-alongside-or-instead-of-windows" title="Permalink to this headline">¶</a></h3>
+<p>This option involves natively installing Linux on your computer so it runs by
+itself and not within Windows. You can either remove Windows completely and
+always run Linux as the primary OS, or you can set your computer up with both
+operating systems on the hard drive so that you can choose to boot into either.
+This is called a dual-boot configuration. Follow the <a class="reference internal" href="#install-linux"><span class="std std-ref">instructions for natively
+installing Linux</span></a> below.</p>
+</div>
+</div>
+<div class="section" id="mac-is-unix">
+<h2><span class="section-number">7.2. </span>Mac is Unix<a class="headerlink" href="#mac-is-unix" title="Permalink to this headline">¶</a></h2>
+<p>Both Linux and MacOS operating systems are members of the  Unix family of
+operating systems. MacOS is based on Darwin (a unix-like operating
+system), whilst Linux is another Unix-like OS.</p>
+<p>Practically this means that MacOS and Linux behave similarly and are both much
+easier to program with than Windows. That said, there are some benefits to Linux
+for a programmer over MacOS. Firstly you are basically trusted to break and fix
+most things yourself, whilst you CAN do similar things on Mac, they may be
+harder to achieve or done in different, more roundabout ways.</p>
+<p>There are minor inconsistencies between Mac and Linux implementations of various
+tools, for instance <code class="docutils literal notranslate"><span class="pre">grep</span></code>. This means that a bash script written for Linux
+may not work out of the box on Mac. But that is a minor issue.</p>
+<p>So the take-home message is, don’t bother with a MacOS - Linux dual
+boot, unless your life is <em>really</em> boring. If you particularly do need an actual
+Linux environment under MacOS, then the <a class="reference internal" href="#virtual-machine"><span class="std std-ref">instructions for installing a virtual
+machine</span></a> will also work for Mac.</p>
+</div>
+<div class="section" id="activating-linux-on-chrome-os">
+<span id="linux-chrome"></span><h2><span class="section-number">7.3. </span>Activating Linux on Chrome OS<a class="headerlink" href="#activating-linux-on-chrome-os" title="Permalink to this headline">¶</a></h2>
+<p>Recent Chromebooks have a built-in ability to run Linux in a virtual machine.
+This is important since many of the programming tools required for Faculty of
+Natural Sciences cannot be installed natively on ChromeOS, but can be installed
+in the Linux virtual machine. Follow the <a class="reference external" href="https://support.google.com/chromebook/answer/9145439">instructions for setting up Linux on
+your Chromebook</a></p>
+<p>Once you have done this, you will have a Debian Linux installation set up inside
+Chrome OS. Debian is a very close relative of Ubuntu so the installation
+instructions provided for various packages for Ubuntu will probably work for you.</p>
+</div>
+<div class="section" id="installing-ubuntu-linux">
+<span id="install-linux"></span><h2><span class="section-number">7.4. </span>Installing Ubuntu Linux<a class="headerlink" href="#installing-ubuntu-linux" title="Permalink to this headline">¶</a></h2>
 <p>You may already have (or received) a bootable USB stick with Ubuntu 20.04 (64
 bit) installer on it. If you didn’t or would rather make your own (indeed, why
 not?!), <a class="reference external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0">its pretty easy</a>.</p>
 <div class="section" id="ubuntu-only-install">
-<h3><span class="section-number">7.1.1. </span>Ubuntu-only install<a class="headerlink" href="#ubuntu-only-install" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.4.1. </span>Ubuntu-only install<a class="headerlink" href="#ubuntu-only-install" title="Permalink to this headline">¶</a></h3>
 <p>Once you have your bootable USB, <a class="reference external" href="https://tutorials.ubuntu.com">follow this
 tutorial</a>. The best way to do this is
 to keep it handy on your smart phone or another computer and go through
@@ -75,32 +141,23 @@ are common alternatives. Otherwise, just <a class="reference external" href="htt
 webpage</a>. You can also
 look for a brief message when your system starts, that will tell you
 which key to press to bring up the boot menu.</p>
-<p>Once you have the Ububtu welcome screen, the rest should be easy. If you
-are using one of the College-issued CMEE laptops, you should choose the
+<p>Once you have the Ubuntu welcome screen, the rest should be easy. If you intend
+to install Ubuntu as the only operating system on your system then choose
 “Erase disk and install Ubuntu” option.</p>
 </div>
 <div class="section" id="dual-boot-with-windows">
-<h3><span class="section-number">7.1.2. </span>Dual boot with Windows<a class="headerlink" href="#dual-boot-with-windows" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.4.2. </span>Dual boot with Windows<a class="headerlink" href="#dual-boot-with-windows" title="Permalink to this headline">¶</a></h3>
 <p>You can also set up your computer to dual boot Ubuntu and Windows.</p>
 <p>There are few (no?) benefits to choosing to dual-boot, and we do not
 recommended it. One reason may be that you are using your own laptop,
-and are keen on keeping your Windows installation that you paid $$ or
-$$$$ for. In that case, try it. <a class="reference external" href="https://help.ubuntu.com/community/WindowsDualBoot">There are detailed instructions
+and are keen on keeping your Windows. In that case, try it. <a class="reference external" href="https://help.ubuntu.com/community/WindowsDualBoot">There are detailed instructions
 available</a>.</p>
 <p>Alternatively, do a native install of Ubuntu, and then virtualize the
 other operating system. Google “windows virtual machine on ubuntu”, and
 you will get plenty of step by step tutorials.</p>
 </div>
-<div class="section" id="dual-boot-with-mac-os">
-<h3><span class="section-number">7.1.3. </span>Dual boot with Mac OS<a class="headerlink" href="#dual-boot-with-mac-os" title="Permalink to this headline">¶</a></h3>
-<p>Don’t be crazy!</p>
-<p>Both Linux and MacOS operating systems stem from Unix, an older OS which was fairly heavily copyrighted and licensed. MacOS is based on Darwin (a unix-like operating system), whilst Linux is another Unix-like OS.</p>
-<p>Practically this means that MacOS and Linux behave similarly and are both much easier to program with than Windows. That said, there are some benefits to Linux for a programmer over MacOS. Firstly you are basically trusted to break and fix most things yourself, whilst you CAN do similar things on Mac, they may be harder to achieve or done in different, more roundabout ways.</p>
-<p>There are minor inconsistencies between Mac and Linux implementations of various tools, for instance <code class="docutils literal notranslate"><span class="pre">grep</span></code>. This means that a bash script written for Linux may not work out of the box on Mac. BUt that is a minor issue.</p>
-<p>So the take-home message is, don’t bother wasting time with a MacOS - Linux dual boot, unless your life is <em>really</em> boring.</p>
-</div>
 <div class="section" id="creating-partitions-during-linux-installation">
-<h3><span class="section-number">7.1.4. </span>Creating partitions during Linux installation<a class="headerlink" href="#creating-partitions-during-linux-installation" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.4.3. </span>Creating partitions during Linux installation<a class="headerlink" href="#creating-partitions-during-linux-installation" title="Permalink to this headline">¶</a></h3>
 <p>When you install Ubuntu, you will have the opportunity to create separate
 <code class="docutils literal notranslate"><span class="pre">swap</span></code>, <code class="docutils literal notranslate"><span class="pre">root</span></code> and <code class="docutils literal notranslate"><span class="pre">home</span></code> partitions on your hard disk. <code class="docutils literal notranslate"><span class="pre">swap</span></code>
 necessarily needs to be a separate partition, while <code class="docutils literal notranslate"><span class="pre">root</span> <span class="pre">+</span> <span class="pre">home</span></code> can be on
@@ -113,7 +170,7 @@ reinstall it by just wiping the root partition, without losing any of your data
 </div>
 </div>
 <div class="section" id="tweaking-your-ubuntu-os">
-<h2><span class="section-number">7.2. </span>Tweaking your Ubuntu OS<a class="headerlink" href="#tweaking-your-ubuntu-os" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.5. </span>Tweaking your Ubuntu OS<a class="headerlink" href="#tweaking-your-ubuntu-os" title="Permalink to this headline">¶</a></h2>
 <p>Once you have installed Ubuntu, there are are many ways in which you can
 tweak your OS environment. For example, see
 <a class="reference external" href="http://www.howtogeek.com/tag/ubuntu/ubuntu-tips/">http://www.howtogeek.com/tag/ubuntu/ubuntu-tips/</a>.</p>
@@ -122,7 +179,7 @@ stability!</p>
 <p>Here are a couple of tweaks to our bash/terminal behavior that are
 recommended.</p>
 <div class="section" id="opening-nautilus-from-terminal">
-<h3><span class="section-number">7.2.1. </span>Opening Nautilus from terminal<a class="headerlink" href="#opening-nautilus-from-terminal" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.5.1. </span>Opening Nautilus from terminal<a class="headerlink" href="#opening-nautilus-from-terminal" title="Permalink to this headline">¶</a></h3>
 <p>In terminal you can simply enter “f” to open nautilus in current
 directory by doing the following. Firstly make a <code class="docutils literal notranslate"><span class="pre">.bash_aliases</span></code> file,
 then open it for editing:</p>
@@ -140,7 +197,7 @@ then open it for editing:</p>
 </div>
 </div>
 <div class="section" id="enabling-auto-complete-in-terminal">
-<h3><span class="section-number">7.2.2. </span>Enabling auto-complete in terminal<a class="headerlink" href="#enabling-auto-complete-in-terminal" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">7.5.2. </span>Enabling auto-complete in terminal<a class="headerlink" href="#enabling-auto-complete-in-terminal" title="Permalink to this headline">¶</a></h3>
 <p>What happens when you use up and down keys in terminal? If nothing, then
 you need to enable reverse searching history. To do so, open
 <code class="docutils literal notranslate"><span class="pre">/etc/inputrc</span></code> for editing:</p>
@@ -160,7 +217,7 @@ reverse-searching history (open a new terminal and try it!).</p>
 </div>
 </div>
 <div class="section" id="resources">
-<h2><span class="section-number">7.3. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">7.6. </span>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://tutorials.ubuntu.com/">Ubuntu tutorials</a></p></li>
 <li><p><a class="reference external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0">Bootable USB
