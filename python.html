@@ -118,7 +118,7 @@ the Anaconda one. Instead you will use Python’s standard package installer
 <strong class="command">pip</strong>. For example if you need to install <strong class="command">numpy</strong> and <strong class="command">matplotlib</strong> (the core
 numerical computing and plotting packages), as well as support for Jupyter
 notebook, you would run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip3 install numpy matplotlib jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install numpy matplotlib jupyter
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -146,7 +146,9 @@ example, on Ubuntu you would run:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install python3-pip
 </pre></div>
 </div>
-<p>If you already have python 2.x and then installed python3, your pip will by default be pointing to python3’s pip. you can verify that by typing <strong class="command">pip --version</strong> which would be the same as <strong class="command">pip3 --version</strong>.</p>
+<p>In some cases, it can become confusing which version of Python a particular
+<strong class="command">pip</strong> installation belongs to. This can be avoided by always invoking pip using
+<strong class="command">python3 -m pip</strong> rather than just typing <strong class="command">pip</strong> or <strong class="command">pip3</strong>.</p>
 <p>While on Fedora and related distributions, you would run:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf install python-pip
 </pre></div>
@@ -155,7 +157,7 @@ example, on Ubuntu you would run:</p>
 package manager in a similar way. However, you will probably want to install at
 least some packages using pip. For example if you wanted to install Jupyter you
 would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip3 install --user jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install --user jupyter
 </pre></div>
 </div>
 <p>The <strong class="command">--user</strong> option tells pip to just install for the current user. This is
@@ -222,6 +224,10 @@ Linux you would type:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> my_venv/Scripts/activate
 </pre></div>
 </div>
+<p>If using PowerShell on Windows then you type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> .<span class="se">\m</span>y_venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.ps1
+</pre></div>
+</div>
 <p>Obviously, you would use the folder name of your venv instead of
 <strong class="command">my_venv</strong>. In either case, your command prompt will change to indicate
 that you are now using the venv. It might look something like:</p>
@@ -243,11 +249,11 @@ to check is whether you remembered to activate the venv.</p>
 </div>
 <div class="section" id="installing-packages-in-a-venv">
 <h3><span class="section-number">1.5.3. </span>Installing packages in a venv<a class="headerlink" href="#installing-packages-in-a-venv" title="Permalink to this headline">¶</a></h3>
-<p>When the venv is active, the <strong class="command">pip3</strong> that your terminal will find is the one from
-the venv, and any packages you install will be installed in the venv, not in the
-system Python installation. For example if you needed Numpy and Matplotlib, you
-would type the following in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$</span> pip3 install numpy matplotlib
+<p>When the venv is active, the pip installing packages will use the pip from the
+venv, and the packages will be installed in the venv and not globally. For
+example if you needed Numpy and Matplotlib, you would type the following in the
+<a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$</span> python3 -m pip install numpy matplotlib
 </pre></div>
 </div>
 </div>
@@ -329,7 +335,7 @@ type:</p>
 </div>
 <p>Next we’ll install whichever Python packages we need for the module. Let’s
 suppose we just need Jupyter:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> pip3 install jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> python3 -m pip install jupyter
 </pre></div>
 </div>
 <p>Finally, we’ll need to create the folder for the first exercise on our module.

@@ -146,6 +146,94 @@ distributions. See the <a class="reference external" href="https://code.visualst
 </pre></div>
 </div>
 <p>Note that this is a <strong class="command">json</strong> file format; so, each keybinding is in a separate pair of <strong class="command">{ }</strong>’s, each keybinding specification then separated by commas.</p>
+</div>
+</div>
+<div class="section" id="live-share">
+<h2><span class="section-number">3.5. </span>Live Share<a class="headerlink" href="#live-share" title="Permalink to this headline">¶</a></h2>
+<p>One of the key advantages of Visual Studio Code is its Live Share extension.
+Live Share enables two or more programmers to each run Visual Studio Code on
+their own computers but to see and edit the same files in real time, and to see
+each other’s cursors as they edit. Live Share can make collaboration much
+easier, and it also facilitates remote computer lab sessions: the remote
+equivalent of having an instructor look over your shoulder at the screen is to
+Live Share your session with them. Live Share takes a lot less bandwidth than
+sharing your screen and because each participant uses their own IDE, they can
+independently set factors such as the font size to settings that are legible for
+them. There is also a Live Share Audio extension that enables you to talk with
+your collaborators, though you can also use a simultaneous call on another
+platform such as MS Teams or Zoom.</p>
+<div class="section" id="installing-the-live-share-extension">
+<h3><span class="section-number">3.5.1. </span>Installing the Live Share extension<a class="headerlink" href="#installing-the-live-share-extension" title="Permalink to this headline">¶</a></h3>
+<p>Click on the extensions icon, <a class="reference internal" href="_images/vscode_extension.png"><img alt="extension" src="_images/vscode_extension.png" style="height: 2ex;" /></a>, in the left hand bar in Visual Studio
+Code. In the search box which appears, type <strong class="command">Live Share</strong> then <kbd class="kbd docutils literal notranslate">enter</kbd>.
+Click on the <strong class="command">install</strong> button under the <strong class="command">Live Share</strong> extension. Once the
+extension is installed, you should see <a class="reference internal" href="_images/vscode_liveshare.png"><img alt="liveshare" src="_images/vscode_liveshare.png" style="height: 2ex;" /></a> at the bottom of your Visual
+Studio Code screen.</p>
+</div>
+<div class="section" id="starting-a-live-share">
+<h3><span class="section-number">3.5.2. </span>Starting a Live Share<a class="headerlink" href="#starting-a-live-share" title="Permalink to this headline">¶</a></h3>
+<p>Using Live Share requires that you log in using either a Microsoft or a GitHub
+account. If you have neither, then <span class="xref std std-ref">follow these instructions to sign up to
+GitHub</span>. Next click on <a class="reference internal" href="_images/vscode_liveshare.png"><img alt="liveshare" src="_images/vscode_liveshare.png" style="height: 2ex;" /></a> and sign in when prompted.
+Once you have signed in, you will see the following:</p>
+<img alt="_images/vscode_start_liveshare.png" src="_images/vscode_start_liveshare.png" />
+<p>At this stage, the Live Share link has been copied to your clipboard. To invite
+someone else to join your session, you just need to provide them with this link.
+For example you could email it to them, or paste it into a chat message. You
+also have the opportunity at this stage to switch the session to read only,
+which means that your collaborator will be able to see your session but not edit
+your files.</p>
+</div>
+<div class="section" id="joining-a-live-share">
+<h3><span class="section-number">3.5.3. </span>Joining a Live Share<a class="headerlink" href="#joining-a-live-share" title="Permalink to this headline">¶</a></h3>
+<p>If a collaborator passes you a Live Share link then you can usually simply click
+on it. This will open a web browser and, assuming you have Visual Studio Code
+installed, the browser will ask you if you want to open Visual Studio Code. You
+should agree. Alternatively, if you don’t have Visual Studio Code installed,
+you can click on the link to join from your browser. If you do have Visual
+Studio Code installed but are not prompted to join the session live, then you
+can follow the link to join manually, which will give you instructions as to
+where to paste the link in Visual Studio Code itself.</p>
+</div>
+<div class="section" id="participating-in-a-live-share">
+<h3><span class="section-number">3.5.4. </span>Participating in a Live Share<a class="headerlink" href="#participating-in-a-live-share" title="Permalink to this headline">¶</a></h3>
+<p>All participants in a Live Share can see all the files in the project, and each
+others cursors. If there Live Share permits editing (the default), then all
+participants can also edit the files. The image below shows a Live Share session
+in progress. The local user’s cursor is visible in grey while the remote
+participant’s is orange:</p>
+<img alt="_images/vscode_participate_liveshare.png" src="_images/vscode_participate_liveshare.png" />
+<p>The other new image on the screen is the little pin at top right: <a class="reference internal" href="_images/vscode_pin.png"><img alt="pin" src="_images/vscode_pin.png" style="height: 2ex;" /></a>. When
+this pin is selected, it turns green and indicates that this user is following
+the other participant. This means that as the other participant navigates from
+around the file or changes files, the display will jump around to follow them.
+If there are multiple participants, then you will be asked which participant to
+follow.</p>
+</div>
+<div class="section" id="sharing-a-terminal">
+<h3><span class="section-number">3.5.5. </span>Sharing a terminal<a class="headerlink" href="#sharing-a-terminal" title="Permalink to this headline">¶</a></h3>
+<p>By default, any <a class="reference internal" href="terminal.html#terminal-vscode"><span class="std std-ref">terminals</span></a> that you have running from
+within Visual Studio code will not be shared. However, you can launch a shared
+terminal that your collaborators can see and (if you allow it) type in. Click on
+your name at the bottom of the Visual Studio Terminal and choose <strong class="command">Share Terminal</strong>:</p>
+<img alt="_images/vscode_share_terminal.png" src="_images/vscode_share_terminal.png" />
+<p>On the next page you can choose whether the other participants should be able to
+type into the terminal (read/write) or should only be able to watch your work.</p>
+</div>
+<div class="section" id="ending-the-live-share-session">
+<h3><span class="section-number">3.5.6. </span>Ending the Live Share session<a class="headerlink" href="#ending-the-live-share-session" title="Permalink to this headline">¶</a></h3>
+<p>If you are the host of a Live Share, then you can end the session by clicking on
+the Live Share icon on the left, <a class="reference internal" href="_images/vscode_liveshare_icon.png"><img alt="liveshare_icon" src="_images/vscode_liveshare_icon.png" style="height: 2ex;" /></a>, and then selecting the stop
+icon, <a class="reference internal" href="_images/vscode_liveshare_stop.png"><img alt="liveshare_stop" src="_images/vscode_liveshare_stop.png" style="height: 2ex;" /></a>, which appears when you hover your mouse over the
+<strong class="command">SESSION DETAILS</strong> bar:</p>
+<img alt="_images/vscode_stop_liveshare.png" src="_images/vscode_stop_liveshare.png" />
+<p>If you are another participant in a live share, just close the Visual Studio
+Code window for the Live Share session.</p>
+</div>
+<div class="section" id="further-documentation-on-live-share">
+<h3><span class="section-number">3.5.7. </span>Further documentation on Live Share<a class="headerlink" href="#further-documentation-on-live-share" title="Permalink to this headline">¶</a></h3>
+<p>Microsoft publishes extensive documentation and tutorials about how to use Live
+Share on the <a class="reference external" href="https://docs.microsoft.com/en-us/visualstudio/liveshare/">Visual Studio Live Share website</a>.</p>
 <p class="rubric">Footnotes</p>
 <dl class="footnote brackets">
 <dt class="label" id="chrome"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
