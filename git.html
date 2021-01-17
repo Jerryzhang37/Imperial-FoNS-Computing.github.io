@@ -6,13 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4. Git and GitHub Classroom &#8212; Installation instructions for FoNS 2020.0 documentation</title>
-    <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -209,7 +208,7 @@ issues with the most recent versions of <a class="reference internal" href="vsco
 to be good enough for many students on many modules, though it probably won’t be
 the most recent release.</p>
 <p>If you want a more recent version and you’ve <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">installed Homebrew</span></a> then installing Git is as simple as <a class="reference internal" href="terminal.html#terminal-mac"><span class="std std-ref">opening a terminal</span></a> and running the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew install git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>brew install git
 </pre></div>
 </div>
 <p>Now proceed to <a class="reference internal" href="#check-git"><span class="std std-ref">check the install</span></a>.</p>
@@ -223,15 +222,15 @@ website</a>.</p>
 to install Git is usually to simply do whatever it is that is normal on your
 distribution to install software. For example on Ubuntu or any other
 Debian-based system you would run this in the terminal:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo apt-get install git
 </pre></div>
 </div>
 <p>While on Fedora and related distributions, you would run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf install git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo dnf install git
 </pre></div>
 </div>
 <p>or if you’re using an older version of these distributions:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo yum install git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo yum install git
 </pre></div>
 </div>
 <p>If you’re using a different Linux distribution then you’ll probably find the
@@ -241,7 +240,7 @@ correct install line <a class="reference external" href="https://git-scm.com/dow
 <span id="check-git"></span><h2><a class="toc-backref" href="#id11"><span class="section-number">4.5. </span>Check the install</a><a class="headerlink" href="#check-the-install" title="Permalink to this headline">¶</a></h2>
 <p>Check that you’ve got a successfully working Git by running this in the
 <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Opening a terminal</span></a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git --version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git --version
 </pre></div>
 </div>
 <p>The expected output is something like:</p>
@@ -268,8 +267,8 @@ a great deal of confusion later, you should register the actual name that you
 usually go by. Similarly, please use your Imperial email address. <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Open a
 terminal</span></a> and run the following commands, replacing your name as
 appropriate:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global user.name <span class="s2">&quot;Jo Student&quot;</span>
-<span class="gp">$</span> git config --global user.email <span class="s2">&quot;Jo.Student20@imperial.ac.uk&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --global user.name <span class="s2">&quot;Jo Student&quot;</span>
+<span class="gp">$ </span>git config --global user.email <span class="s2">&quot;Jo.Student20@imperial.ac.uk&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -284,14 +283,14 @@ set up Git to automatically clean up this mess in most cases.</p>
 <div class="section" id="windows">
 <h4><a class="toc-backref" href="#id15"><span class="section-number">4.6.2.1. </span>Windows</a><a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h4>
 <p>Run the following command in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">Git Bash terminal</span></a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf <span class="nb">true</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --global core.autocrlf <span class="nb">true</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="macos-or-linux">
 <h4><a class="toc-backref" href="#id16"><span class="section-number">4.6.2.2. </span>MacOS or Linux</a><a class="headerlink" href="#macos-or-linux" title="Permalink to this headline">¶</a></h4>
 <p>Run the following command in the <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.autocrlf input
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --global core.autocrlf input
 </pre></div>
 </div>
 </div>
@@ -302,7 +301,7 @@ set up Git to automatically clean up this mess in most cases.</p>
 launch a text editor to enable you to type the comment in. If you don’t have
 strong preferences for a particular editor, then <strong class="command">nano</strong> is a good choice, so run
 the following line in the terminal:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git config --global core.editor <span class="s2">&quot;nano -w&quot;</span>
 </pre></div>
 </div>
 <p>If you have a favourite text editor, you can set it using the <a class="reference external" href="https://swcarpentry.github.io/git-novice/02-setup/index.html">Software
@@ -401,13 +400,13 @@ webpage, click on the large green <strong class="command">Code</strong> button o
 <img alt="_images/git_clone.png" src="_images/git_clone.png" />
 <p>Click on the little picture of a clipboard to copy the URL. Now, back in your
 terminal type (without pressing <kbd class="kbd docutils literal notranslate">enter</kbd>):</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone
 </pre></div>
 </div>
 <p>Paste the URL you copied into the terminal after <strong class="command">clone</strong> and then press <kbd class="kbd docutils literal notranslate">enter</kbd>.
 If you are asked for your GitHub username and password, enter them, and the
 repository will download. The process should look a little like this:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git clone https://github.com/imperiallearn/fons-test-assignment-dham-test.git
 <span class="go">Cloning into &#39;fons-test-assignment-dham-test&#39;...</span>
 <span class="go">remote: Enumerating objects: 24, done.</span>
 <span class="go">remote: Counting objects: 100% (24/24), done.</span>
@@ -421,13 +420,13 @@ repository will download. The process should look a little like this:</p>
 The folder will have the same name as the repository on GitHub, so in this case
 it’s called <strong class="command">fons-test-assignment-dham-test</strong>. The command to change the current
 folder is <strong class="command">cd</strong> (for “change directory”) so we now change into our repository:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> fons-test-assignment-dham-test
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> fons-test-assignment-dham-test
 </pre></div>
 </div>
 <p>We can now check that we’re in the folder we think we’re in by running the
 command <strong class="command">pwd</strong> (“print working directory”):</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">pwd</span>
-<span class="gp">$</span> /Users/dham/fons-test-assignment-dham-test
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">pwd</span>
+<span class="gp">$ </span>/Users/dham/fons-test-assignment-dham-test
 </pre></div>
 </div>
 <p>This shows me that we’re in the <strong class="command">fons-test-assignment-dham-test</strong> folder in my user
@@ -437,7 +436,7 @@ folder (<strong class="command">/Users/dham</strong>), which is what I expect.</
 <h3><a class="toc-backref" href="#id23"><span class="section-number">4.8.3. </span>Editing <strong class="command">exercise.txt</strong></a><a class="headerlink" href="#editing-exercise-txt" title="Permalink to this headline">¶</a></h3>
 <p>I can now check out what’s in
 this folder with the <strong class="command">ls</strong> command (for “list”):</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> ls
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls
 <span class="go">LICENSE             README.rst      exercise.txt    tests</span>
 </pre></div>
 </div>
@@ -446,7 +445,7 @@ the one I need to edit. I could use any text editor for this purpose, for
 example if I have Visual Studio Code installed then this would be a very
 suitable editor. However here we’ll only assume that you’ve installed <strong class="command">Git</strong> so
 we’ll use the very basic editor <strong class="command">nano</strong>, which is almost certainly installed:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> nano exercise.txt
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>nano exercise.txt
 </pre></div>
 </div>
 <p>This will open the nano editor in your terminal. You should see something like
@@ -474,7 +473,7 @@ change. Each change (to one or many files) that we tell Git about is called a
 Git can currently see about our repository. The command for this, indeed the go
 to command whenever you’re not quite sure what’s going on in your Git
 repository, is:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is up to date with &#39;origin/master&#39;.</span>
 
@@ -511,7 +510,7 @@ list of files to be committed:</p>
 </pre></div>
 </div>
 <p>We can check what that did by running <strong class="command">git status</strong>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is up to date with &#39;origin/master&#39;.</span>
 
@@ -530,7 +529,7 @@ on to make the actual commit.</p>
 <p class="admonition-title">Warning</p>
 <p>Some sites on the internet advocate the following version of <strong class="command">git add</strong>:</p>
 <div class="badcode docutils container">
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git add -A
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git add -A
 </pre></div>
 </div>
 </div>
@@ -547,7 +546,7 @@ another machine. Don’t use <strong class="command">git add -A</strong>!</p>
 <h4><a class="toc-backref" href="#id26"><span class="section-number">4.8.4.2. </span>The actual commit</a><a class="headerlink" href="#the-actual-commit" title="Permalink to this headline">¶</a></h4>
 <p>Having staged the file(s) for commit, we need to actually make the commit. We do
 this with the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git commit -m <span class="s2">&quot;Changed World to Mars&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git commit -m <span class="s2">&quot;Changed World to Mars&quot;</span>
 <span class="go">[master 7ad3846] Changed World to Mars</span>
 <span class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</span>
 </pre></div>
@@ -559,7 +558,7 @@ followed by the commit message in quotation marks. If I were to leave off the
 earlier (nano) for me to enter the commit message. I would save the commit
 message and quit the editor, after which the commit would go ahead as above.</p>
 <p>Let’s use our go to command, <strong class="command">git status</strong> to see what we’ve done:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is ahead of &#39;origin/master&#39; by 1 commit.</span>
 <span class="go">  (use &quot;git push&quot; to publish your local commits)</span>
@@ -583,14 +582,14 @@ knows about. In these circumstances, there’s a shortcut command, and it’s on
 that Git already hinted to us about. Instead of separately running <strong class="command">git add</strong>
 followed by <strong class="command">git commit</strong>, we can use <strong class="command">git commit -a</strong>. We still need to provide a
 commit message, so the equivalent to the two commands above would be:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git commit -am <span class="s2">&quot;Changed World to Mars&quot;</span>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git commit -am <span class="s2">&quot;Changed World to Mars&quot;</span>
 <span class="go">[master 5a4a79c] Changed World to Mars</span>
 <span class="go"> 1 file changed, 1 insertion(+), 1 deletion(-)</span>
 </pre></div>
 </div>
 <p>Now if we type <strong class="command">git status</strong>, we discover we are in exactly the same state as
 when we type the two commands separately:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is ahead of &#39;origin/master&#39; by 1 commit.</span>
 <span class="go">  (use &quot;git push&quot; to publish your local commits)</span>
@@ -603,7 +602,7 @@ when we type the two commands separately:</p>
 <h4><a class="toc-backref" href="#id28"><span class="section-number">4.8.4.4. </span>Pushing changes to GitHub</a><a class="headerlink" href="#pushing-changes-to-github" title="Permalink to this headline">¶</a></h4>
 <p>The final stage in the commit process is to push the changes we have made up to
 GitHub:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git push
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git push
 <span class="go">Enumerating objects: 5, done.</span>
 <span class="go">Counting objects: 100% (5/5), done.</span>
 <span class="go">Delta compression using up to 4 threads</span>
@@ -622,7 +621,7 @@ pushing to, and that we pushed the local master branch to the GitHub master
 branch.</p>
 <p>If we now type <strong class="command">git status</strong>, we find that we are no longer ahead of
 <strong class="command">origin/master</strong>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> git status
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git status
 <span class="go">On branch master</span>
 <span class="go">Your branch is up to date with &#39;origin/master&#39;.</span>
 
@@ -703,7 +702,7 @@ language is being used.</p>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2020 Imperial College London.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
     </div>
   </body>
 </html>

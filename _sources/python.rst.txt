@@ -177,11 +177,17 @@ Creating a venv
 The most straightforward way to create a venv is on the terminal
 command line, not from within Python itself. This is accomplished
 using Python's :mod:`venv` package. For example, to create a venv
-called `my_venv`, you would type:
+called `my_venv` on Windows, you would type:
 
 .. code-block:: console
 
-   $ python3 -m venv my_venv
+    > py -m venv my_venv
+
+while on Mac or Linux you would type:
+
+.. code-block:: console
+
+    $ python3 -m venv my_venv
 
 Don't forget that the `$` stands for the command prompt: you don't
 type it. This command will create the folder `my_venv` and various
@@ -246,6 +252,18 @@ for the correct activation command.
 
 .. hint::
 
+    The default permissions settings on your Windows computer may not permit you
+    to run the activation script. This can be fixed by running:
+
+    .. code-block:: console
+
+        > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+    For further information, see :doc:`the official Python venv documentation
+    <library/venv>`.
+
+.. hint::
+
    Venv activation is just for one terminal session. You need to
    activate the venv every time you open a new terminal.  If you find
    that Python can't find your packages or tests, then the first thing
@@ -261,7 +279,7 @@ example if you needed Numpy and Matplotlib, you would type the following in the
 
 .. code-block:: console
 
-    (my_venv) $ python3 -m pip install numpy matplotlib
+    (my_venv) $ python -m pip install numpy matplotlib
 
 .. _python_folders:
 
@@ -339,6 +357,12 @@ says that it's a venv. In this case, the name `PoP_venv` will do nicely:
 
 .. code-block:: console
 
+    $ py -m venv PoP_venv
+
+on Windows, or on Mac or Linux:
+
+.. code-block:: console
+
     $ python3 -m venv PoP_venv
 
 When that completes, we'll need to :ref:`activate the venv <activate_venv>`. On Windows we would
@@ -359,7 +383,7 @@ suppose we just need Jupyter:
 
 .. code-block:: console
 
-    (PoP_venv) $ python3 -m pip install jupyter
+    (PoP_venv) $ python -m pip install jupyter
 
 Finally, we'll need to create the folder for the first exercise on our module.
 If the module is not using GitHub Classroom then you'll just use `mkdir` to make a
@@ -387,7 +411,7 @@ version thus:
 
 .. code-block:: console
 
-    (PoP_venv) $ python3 exercise_1/hello.py
+    (PoP_venv) $ python exercise_1/hello.py
     Hello World!
 
 Or we can launch the Jupyter version:

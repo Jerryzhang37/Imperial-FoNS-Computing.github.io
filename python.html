@@ -6,13 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1. Python &#8212; Installation instructions for FoNS 2020.0 documentation</title>
-    <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/fenics.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script async="async" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -75,7 +74,7 @@ instructions there to download and run the installer.</p>
 <h3><span class="section-number">1.3.1. </span>Homebrew install Anaconda<a class="headerlink" href="#homebrew-install-anaconda" title="Permalink to this headline">¶</a></h3>
 <p>If you’ve installed <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">Homebrew for Mac</span></a> then you can install Anaconda by
 to <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">opening a terminal</span></a> and run the following command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew cask install anaconda
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>brew cask install anaconda
 </pre></div>
 </div>
 <p>When asked, enter your Mac password. On this occasion we’re not quite done
@@ -87,13 +86,13 @@ we are using. The default on recent MacOS is <strong class="command">zsh</strong
 MacOS for a while and haven’t changed, you might be using <strong class="command">bash</strong>. Just to be on
 the safe side, we’ll run both commands. If you know for sure which shell you are
 using, then you can just run the appropriate one. If you’re not sure, run both:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="s1">&#39;export PATH=/usr/local/anaconda3/bin:$PATH&#39;</span> &gt;&gt; ~/.zshrc
-<span class="gp">$</span> <span class="nb">echo</span> <span class="s1">&#39;export PATH=/usr/local/anaconda3/bin:$PATH&#39;</span> &gt;&gt; ~/.bash_profile
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="s1">&#39;export PATH=/usr/local/anaconda3/bin:$PATH&#39;</span> &gt;&gt; ~/.zshrc
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s1">&#39;export PATH=/usr/local/anaconda3/bin:$PATH&#39;</span> &gt;&gt; ~/.bash_profile
 </pre></div>
 </div>
 <p>Then close the terminal and open a new one to make sure the changes have taken
 effect. Run the following command to check that Anaconda is working properly:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> conda --version
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>conda --version
 <span class="go">conda 4.8.3</span>
 </pre></div>
 </div>
@@ -109,7 +108,7 @@ installation website</a>.</p>
 <h3><span class="section-number">1.3.3. </span>Homebrew Python<a class="headerlink" href="#homebrew-python" title="Permalink to this headline">¶</a></h3>
 <p>An alternative to using Anaconda is to install Python directly using
 <a class="reference internal" href="homebrew.html#homebrew"><span class="std std-ref">Homebrew</span></a>. Simply run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> brew install python
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>brew install python
 </pre></div>
 </div>
 <p>This will automatically ensure that the command <strong class="command">python3</strong> points to the correct
@@ -118,7 +117,7 @@ the Anaconda one. Instead you will use Python’s standard package installer
 <strong class="command">pip</strong>. For example if you need to install <strong class="command">numpy</strong> and <strong class="command">matplotlib</strong> (the core
 numerical computing and plotting packages), as well as support for Jupyter
 notebook, you would run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install numpy matplotlib jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3 -m pip install numpy matplotlib jupyter
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -143,21 +142,21 @@ that you need. There are a couple of issues with this of which you should be
 aware. First, not all Linux distributions install <strong class="command">pip</strong> by default, often you
 need to install an additional package called something like <strong class="command">python-pip</strong>. For
 example, on Ubuntu you would run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install python3-pip
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo apt-get install python3-pip
 </pre></div>
 </div>
 <p>In some cases, it can become confusing which version of Python a particular
 <strong class="command">pip</strong> installation belongs to. This can be avoided by always invoking pip using
 <strong class="command">python3 -m pip</strong> rather than just typing <strong class="command">pip</strong> or <strong class="command">pip3</strong>.</p>
 <p>While on Fedora and related distributions, you would run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> sudo dnf install python-pip
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo dnf install python-pip
 </pre></div>
 </div>
 <p>It’s also possible to install quite a lot of Python packages using the Linux
 package manager in a similar way. However, you will probably want to install at
 least some packages using pip. For example if you wanted to install Jupyter you
 would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m pip install --user jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3 -m pip install --user jupyter
 </pre></div>
 </div>
 <p>The <strong class="command">--user</strong> option tells pip to just install for the current user. This is
@@ -188,8 +187,12 @@ files are shared, so a venv takes rather little additional space.</p>
 <p>The most straightforward way to create a venv is on the terminal
 command line, not from within Python itself. This is accomplished
 using Python’s <a class="reference external" href="https://docs.python.org/3/library/venv.html#module-venv" title="(in Python v3.9)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">venv</span></code></a> package. For example, to create a venv
-called <strong class="command">my_venv</strong>, you would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m venv my_venv
+called <strong class="command">my_venv</strong> on Windows, you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> py -m venv my_venv
+</pre></div>
+</div>
+<p>while on Mac or Linux you would type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3 -m venv my_venv
 </pre></div>
 </div>
 <p>Don’t forget that the <strong class="command">$</strong> stands for the command prompt: you don’t
@@ -202,7 +205,7 @@ an error, so make sure you choose a new name.</p>
 should regard them as essentially disposable. In particular, if
 something goes wrong when creating a venv, just delete it and start
 again. In the bash or zsh shells you would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> rm -rf my_venv
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm -rf my_venv
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -217,11 +220,11 @@ Be very careful about what you delete.</p>
 <p>If you run Python from the terminal, then the simplest way to use the
 venv is to source its activate script. If using bash or zsh on Mac or
 Linux you would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> my_venv/bin/activate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> my_venv/bin/activate
 </pre></div>
 </div>
 <p>while using bash on Windows you would type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> my_venv/Scripts/activate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> my_venv/Scripts/activate
 </pre></div>
 </div>
 <p>If using PowerShell on Windows then you type:</p>
@@ -241,6 +244,15 @@ other than bash or zsh, then see the <a class="reference external" href="https:/
 for the correct activation command.</p>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
+<p>The default permissions settings on your Windows computer may not permit you
+to run the activation script. This can be fixed by running:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;</span> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+</pre></div>
+</div>
+<p>For further information, see <a class="reference external" href="https://docs.python.org/3/library/venv.html" title="(in Python v3.9)"><span class="xref std std-doc">the official Python venv documentation</span></a>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
 <p>Venv activation is just for one terminal session. You need to
 activate the venv every time you open a new terminal.  If you find
 that Python can’t find your packages or tests, then the first thing
@@ -253,7 +265,7 @@ to check is whether you remembered to activate the venv.</p>
 venv, and the packages will be installed in the venv and not globally. For
 example if you needed Numpy and Matplotlib, you would type the following in the
 <a class="reference internal" href="terminal.html#terminal"><span class="std std-ref">terminal</span></a>:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$</span> python3 -m pip install numpy matplotlib
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(my_venv)</span> <span class="gp">$ </span>python -m pip install numpy matplotlib
 </pre></div>
 </div>
 </div>
@@ -285,11 +297,11 @@ This just comes down to how you organise the files on your computer. On my
 computer, I like to keep this sort of folder in a documents folder called <strong class="command">doc</strong>.
 So I need to switch into that folder first with the <strong class="command">cd</strong> (change directory)
 command:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> doc
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> doc
 </pre></div>
 </div>
 <p>Now we create the main module folder using <strong class="command">mkdir</strong> (make directory):</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> mkdir principles_of_programming
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir principles_of_programming
 </pre></div>
 </div>
 <div class="admonition hint">
@@ -301,7 +313,7 @@ names correctly. It’s therefore good practice not to have spaces in file or
 folder names.</p>
 </div>
 <p>Now we change into the folder we just created:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> principles_of_programming
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> principles_of_programming
 </pre></div>
 </div>
 <div class="admonition hint">
@@ -321,21 +333,25 @@ but avoids typos.</p>
 but we would probably like a name which is short (because it’s going to appear
 at the start of every line in the terminal), describes which venv this is, and
 says that it’s a venv. In this case, the name <strong class="command">PoP_venv</strong> will do nicely:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> python3 -m venv PoP_venv
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>py -m venv PoP_venv
+</pre></div>
+</div>
+<p>on Windows, or on Mac or Linux:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python3 -m venv PoP_venv
 </pre></div>
 </div>
 <p>When that completes, we’ll need to <a class="reference internal" href="#activate-venv"><span class="std std-ref">activate the venv</span></a>. On Windows we would
 type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> PoP_venv/Scripts/activate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> PoP_venv/Scripts/activate
 </pre></div>
 </div>
 <p>While on Mac or Linux it would be:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">source</span> PoP_venv/bin/activate
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">source</span> PoP_venv/bin/activate
 </pre></div>
 </div>
 <p>Next we’ll install whichever Python packages we need for the module. Let’s
 suppose we just need Jupyter:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> python3 -m pip install jupyter
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span>python -m pip install jupyter
 </pre></div>
 </div>
 <p>Finally, we’ll need to create the folder for the first exercise on our module.
@@ -345,25 +361,25 @@ Git repository to clone for each exercise. As a demonstration, we can use this
 <a class="reference external" href="https://github.com/imperiallearn/exercise_1">example Git repository</a>. Unlike
 most coursework repositories, this one is public so anyone can clone it.
 Assuming we’ve <a class="reference internal" href="git.html#git-windows"><span class="std std-ref">installed Git</span></a>, we can type:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> git clone https://github.com/imperiallearn/exercise_1.git
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span>git clone https://github.com/imperiallearn/exercise_1.git
 </pre></div>
 </div>
 <p>If we now examine the contents of the current folder with <strong class="command">ls</strong> (list) then we
 can see that we have the venv folder and the exercise folder as expected:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> ls
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span>ls
 <span class="go">exercise_1  PoP_venv</span>
 </pre></div>
 </div>
 <p>The <strong class="command">exercise_1</strong> repository contains a simple “Hello World” program written as
 both a Python file and a Jupyter notebook. For example we can run the file
 version thus:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> python3 exercise_1/hello.py
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span>python exercise_1/hello.py
 <span class="go">Hello World!</span>
 </pre></div>
 </div>
 <p>Or we can launch the Jupyter version:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> <span class="nb">cd</span> exercise_1
-<span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$</span> jupyter notebook hello.ipynb
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span><span class="nb">cd</span> exercise_1
+<span class="gp gp-VirtualEnv">(PoP_venv)</span> <span class="gp">$ </span>jupyter notebook hello.ipynb
 </pre></div>
 </div>
 <p>This pops up a web browser showing:</p>
@@ -437,7 +453,7 @@ code box and pressing <kbd class="kbd docutils literal notranslate">shift</kbd> 
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2020 Imperial College London.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
     </div>
   </body>
 </html>
